@@ -1,24 +1,19 @@
 @charset 'utf-8';
+
 @font-face {
-    font-family: 'UhBeeKeongKeong';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeKeongKeong.woff') format('woff');
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
+}
 @font-face {
-    font-family: 'CookieRun-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
-@font-face {
-    font-family: 'BinggraeMelona';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona.woff') format('woff');
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 *{
-    font-family: 'BinggraeMelona';
+        font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 html, body{margin:0;}
@@ -63,16 +58,16 @@ a{text-decoration: none;}
 }
 
 .logo a{
-    font-family: 'UhBeeKeongKeong';    /* logo */
-    font-size:1.2em;
+    font-family: 'NEXON Lv1 Gothic OTF Bold';    /* logo */
+    font-size:1.5em;
 }
 .logo a span:nth-child(1){
-    font-family: 'UhBeeKeongKeong';
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
     font-size:1em;
     color:lightskyblue;
 }
 .logo a span:nth-child(2){
-    font-family: 'UhBeeKeongKeong';
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
     font-size:1em;
     color:pink;
 }
@@ -360,6 +355,11 @@ input:focus {
 .item-tag > h2{
     margin-bottom: 1rem;
 }
+.item-tag-price span{
+    color:#959595;
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
 
 /* SNS */
 .sns-bt {
@@ -376,11 +376,11 @@ input:focus {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    margin-top: 3em;
 }
 .sns-bt ul li{
     margin: 0.5em;    
 }
-
 
 /* Pages */
 
@@ -413,7 +413,3 @@ footer{
 .footer2{
     width: 80%;
 }
-
-
-
-/* FONT */

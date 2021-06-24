@@ -115,8 +115,8 @@
     /* top:1em; */
     /* border:1px solid; */
     height: 1em;
-    left:0;
-    top:2em;
+    right:0.3em;
+    top:1.3em;
 }
 .category-search input[type="search"]{
     border: 0;

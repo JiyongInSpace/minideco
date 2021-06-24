@@ -21,13 +21,14 @@
 .main-2 div:nth-child(1){
     font-size: 6em;
     font-weight: bold;
-    letter-spacing: -0.15em;
+    letter-spacing: 0em;
     animation: m1 4s;
 }
 .main-2 div:nth-child(2){
     font-size: 3em;
-    letter-spacing: -0.15em;
+    letter-spacing: 0em;
     animation: m1 4s;
+    color:rgba(126, 63, 12, 0.842);
 }
 @keyframes m1{
     0%{opacity:0;}
@@ -113,18 +114,15 @@
 .list-title1{
     font-size: 2em;
     font-weight: bold;
-    letter-spacing: -0.08em;
-    font-family: 'CookieRun-Regular';
+    letter-spacing: -0.03em;
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
 }
 .list-title2{
     font-size: 1em;
     letter-spacing: -0.1em;
 }
 
-/* SNS */
-.sns-bt{
-    margin-top: 3em;
-}
+
 
 
 /* ONSALE */
