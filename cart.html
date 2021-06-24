@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minideco</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+        
+    <header class="header-1">
+        <div class="header-2">
+            <div class="header-3">
+                <div class="logo">
+                    <!-- <img src="img/logo.png" alt="LOGO"></a> -->
+                    <a href="index.html"><span>M</span>INI<SPAN>D</SPAN>ECO</a>
+                </div>
+                <ul class="menu-1">
+                    <li><a href="category.html">CATEGORY</a></li>
+                    <li>
+                        <a href="notice.html">COMMUNITY</a>
+                        <ul class="dropdown1">
+                            <li><a href="notice.html">notice</a></li>
+                            <li><a href="review.html">review</a></li>
+                            <li><a href="qna.html">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="cart.html">MYPAGE</a>
+                        <ul class="dropdown2">
+                            <li><a href="cart.html">cart</a></li>
+                            <li><a href="myinfo.html">my info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu-2">
+                    <li>
+                        <input type="radio" id="login" name="login-signup">
+                        <div class="login-bg">
+                            <div class="login-modal">
+                                <input type="radio" id="exit" name="login-signup">
+                                <label for="exit"><span>끄기</span></label>
+                                <div class="login-con">
+                                    <div>
+                                        <h2>LOGIN</h2>
+                                        <span>회원로그인</span>
+                                    </div>
+                                    <form class="login-form">
+                                        <div>
+                                            <input type="text" id="id" placeholder="아이디">
+                                            <input type="password" id="pw" placeholder="패스워드">
+                                        </div>
+                                        <div>
+                                            <input type="submit" id="sm" value="로그인">
+                                        </div>
+                                    </form>
+                                    <div>
+                                        <a href="signup.html" target="_blank"><span>회원가입 </span></a>
+                                        <span>아이디/비밀번호 찾기</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="login">로그인</label>
+                    </li>
+                    <li><a href="signup.html" target="_blank">회원가입</a></label></li>
+                    <li><a href="">즐겨찾기</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- SNS -->
+    <div class="sns-bt">
+        <ol>
+            <li><a href="https://www.instagram.com/minideco2216/" target="_blank"><img src="img/insta.jpg" alt=""></a></li>
+            <li><a href="https://story.kakao.com/" target="_blank"><img src="img/kakao.jpg" alt=""></a></li>
+        </ol>
+    </div>
+
+    <table class="cart-tb">
+        <caption class="cart-cap">장바구니</caption>
+        <thead>
+            <tr>
+                <th>번호</th><th>상품정보</th><th>수량</th><th>금액</th><th>옵션</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="cart-info">
+                    <figure class="cart-pt1"></figure>
+                    <div>(L) DIY 행거 - B형 13,000원</div>
+                </td>
+                <td>2</td>
+                <td>26,000원</td>
+                <td>변경 삭제</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="cart-info">
+                    <figure class="cart-pt2"></figure>
+                    <div>(L) DIY 행거 - B형 13,000원</div>
+                </td>
+                <td>2</td>
+                <td>26,000원</td>
+                <td>변경 삭제</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="cart-info">
+                    <figure class="cart-pt3"></figure>
+                    <div>(L) DIY 행거 - B형 13,000원</div>
+                </td>
+                <td>2</td>
+                <td>26,000원</td>
+                <td>변경 삭제</td>
+            </tr>
+            <tr class="cart-sum">
+                <td></td>
+                <td></td>
+                <td>합계</td>
+                <td>78,000원</td>
+                <td></td>
+            </tr>
+            <tr class="cart-total">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>상품 합계금액<br>배송비<h2>총 금액</h2></td>
+                <td>78,000원<br>3,000원<h2>81,000원</h2></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    
+                    <div class="cart-bt"><a href=""><p>구매하기</a></p></a></div>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="use-info">
+        <h2>장바구니이용안내</h2>
+        <p>
+            무이자할부 상품 주문의 경우, 무이자할부 혜택을 받으시려면 '장바구니 - 무이자할부 상품' 아래의 [주문하기] 버튼을 눌러 주문/결제 하시면 됩니다.<br>
+            [전체 상품 주문] 버튼을 누르시면 장바구니의 구분없이선택된 모든 상품에 대한 주문/결제가 이루어집니다. 단, 전체 상품을 주문/결제하실 경우, 상품별 무이자할부 혜택을 받으실 수 없습니다.<br>
+            선택하신 상품의 수량을 변경하시려면 수량변경 후 [수정] 버튼을 누르시면 됩니다. [쇼핑 계속] 버튼을 누르시면 쇼핑을 계속 하실 수 있습니다.
+            장바구니에 담긴 상품은 5일 동안 보관됩니다. 보관된 상품은 5일 이후에 삭제되오니 장바구니에서 삭제된 경우 다시 장바구니에 담으시기 바랍니다.<br>
+            장바구니와 관심상품을 이용하여 원하시는 상품만 주문하거나 관심상품으로 등록하실 수 있습니다.
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer1">
+            <span>CS CENTER</span> <span>고객센터 </span> 010 1234 1234 ㅣ OPEN AM 10:00 - PM 5:00 ㅣ SAT.SUN.HOLIDAY OFF
+        </div>
+        <div class="footer2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+        </div>
+    </footer>
+</body>
+</html>

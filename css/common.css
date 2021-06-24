@@ -1,0 +1,419 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'UhBeeKeongKeong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeKeongKeong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'BinggraeMelona';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'BinggraeMelona';
+}
+
+html, body{margin:0;}
+ul, li, ol{
+    list-style-type:none;
+    margin:0; 
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6,figure,p{margin:0;}
+img{vertical-align: top;}
+a{text-decoration: none;}
+
+*{ 
+    box-sizing: border-box;
+    font-size:1rem;
+    color:#555;
+}
+
+
+
+/* HEADER + dropdown */
+.header-1{
+    width:100%; height:80px;
+}
+.header-2{
+    width:100%; height:80px;
+    position:fixed;
+    background:white;
+    z-index: 3;
+    border-bottom:1px solid lightgray;
+}
+.header-3{
+    display:flex;
+    background:white;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width:80%;
+    height:80px;
+    z-index: 3;
+    border-bottom:1px solid lightgray;
+}
+
+.logo a{
+    font-family: 'UhBeeKeongKeong';    /* logo */
+    font-size:1.2em;
+}
+.logo a span:nth-child(1){
+    font-family: 'UhBeeKeongKeong';
+    font-size:1em;
+    color:lightskyblue;
+}
+.logo a span:nth-child(2){
+    font-family: 'UhBeeKeongKeong';
+    font-size:1em;
+    color:pink;
+}
+
+.menu-1, .menu-2{
+    display:flex;
+    justify-content: center;
+    z-index: 1;
+}
+.menu-2 li a, .menu-2 li label{
+    font-size:14px;
+}
+.menu-1>li{
+    margin: 1.5em;
+    font-weight: bold;
+}
+.menu-2>li{
+    margin: 0.5em;
+}
+
+.menu-1 li{
+    position: relative;
+}
+.menu-1 li:hover ul{
+    opacity: 1;
+    bottom:0px;
+}
+/* .menu-1 li:nth-child(2):hover .dropdown1{
+    opacity: 1;
+    width: 100px;
+    top:20px;
+}
+.menu-1 li:nth-child(3):hover .dropdown2{
+    opacity: 1;
+    width:80px;
+    left:-0.5em;
+    top:20px;
+} */
+
+.dropdown1, .dropdown2{
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s, bottom .5s;     /* 속성별로 transition 주는것도 가능 */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgba(255, 255, 255, 0.8);
+    width:110px;
+    /* top:-200px; */
+    padding-top: 1em;
+    left:50%; 
+    bottom:-20px;
+    transform: translate(-50%, 100%);
+}
+.dropdown1 li, .dropdown2 li{
+    margin: 0.3em;
+}
+
+.header-2 .menu-2 li:hover>a,
+.header-2 .menu-2 li:hover>label,
+.header-2 .menu-2 li #login:checked ~ label{
+    font-weight: bold;
+}
+.dropdown1>li:hover a, .dropdown2>li:hover a,
+.dropdown1>li:hover, .dropdown2>li:hover{
+    background: lightgray;
+    color:white;
+    width:100%;
+    text-align: center;
+}
+.header-2 .menu-1>li:hover>a {
+    color: gray;
+    /* font-size:18px; */
+}
+
+
+/* MODAL(login) - 모달기능(나가기 등) */
+.login-bg{
+    position:fixed;
+    top:80px;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+    display: none;
+}
+.login-bg .login-modal{
+    border: 3px solid #555555;
+    background:white;
+    width:422px; height: 211px;
+    text-align: center;
+    position:relative;
+}
+#login{
+    display: none;
+}
+#login:checked + .login-bg{
+    display: flex;
+}
+
+label[for="exit"]{
+    position: absolute;
+    right: 0.5em;
+}
+label[for="exit"]::before{
+    content:"✕";
+}
+label[for="exit"] span{
+    overflow: hidden;
+    position: absolute;
+    width:1px; height: 1px;
+    opacity: 0;
+}
+#exit{
+    display: none;
+}
+
+/* MODAL(login) - input */
+.login-con{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.login-con h2{
+    font-size:1.5em;
+    /* font-weight: bold; */
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+}
+.login-form div{
+    display:flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.login-form div input{
+    border: 0px;
+    margin: 3px 0;
+    /* font-size: */
+}
+input:focus {
+    outline:none;
+}
+.login-form div input[type=submit]{
+    width:53px; height:50px;
+    background-color:#b5b5b5;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+.login-form div input[type="text"],
+.login-form div input[type="password"]{
+    border-bottom: 1px solid #959595;
+    text-align: right;
+}
+
+/* .login-form div input{ width: 200px;} */
+
+
+
+/* 
+상품 누를 때 호버효과     (figure에 position:relative;)
+*/
+.fig-bg{
+    width:100%; height: 60px;
+    background-color: rgba(0,0,0,0.6);
+    position:absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity:0;
+}
+.special-item:hover .fig-bg, .onsale-item:hover .fig-bg,
+.best-item:hover .fig-bg, .review-item:hover .fig-bg,
+.category-item:hover .fig-bg{
+    opacity:1;
+}
+.fig-bg .fig-bt{
+    width:122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fig-bg .fig-bt div{
+    width: 34px; height: 34px;
+    background-color: rgba(255,255,255,0.5);
+    background-position:center;
+    background-size:70% 70%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: 0.5s
+}
+.fig-bg .fig-bt div:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.fig-bg .fig-bt a:nth-child(1) div{
+    background-image: url('../img/seemore.png');
+}
+.fig-bg .fig-bt a:nth-child(2) div{
+    background-image: url('../img/cart.png');
+}
+.fig-bg .fig-bt a:nth-child(3) div{
+    background-image: url('../img/heart.png');
+}
+
+/* 구글아이콘으로 만들어보기 */
+.fig-bg .fig-bt1{
+    width:122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fig-bg .fig-bt1 div{
+    width: 34px; height: 34px;
+    background-color: rgba(255,255,255,0.5);
+    background-position:center;
+    background-size:70% 70%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fig-bg .fig-bt1 div:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.fig-bg .fig-bt1 div span{
+    transition:0.5s;
+}
+.fig-bg .fig-bt1 div:hover span{
+    color:white;
+}
+
+/* img src로 만들어보기 */
+.fig-bg .fig-bt2{
+    width:122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fig-bg .fig-bt2 div{
+    width: 34px; height: 34px;
+    background-color: rgba(255,255,255,0.5);
+    background-position:center;
+    background-size:70% 70%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fig-bg .fig-bt2 div img{
+    width:75%;
+}
+.fig-bg .fig-bt2 div:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+
+
+
+/* 상품명, 가격표, 설명 정렬 */
+.item-tag-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.item-tag > h2{
+    margin-bottom: 1rem;
+}
+
+/* SNS */
+.sns-bt {
+    width: 73px;
+    height: 121px;
+    border: 1px solid lightgray;
+    border-radius: 1em 0 0 1em;
+    border-right: 0;
+    position: sticky;
+    margin-left:auto;
+    top:80%; 
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.sns-bt ul li{
+    margin: 0.5em;    
+}
+
+
+/* Pages */
+
+.pages{
+    width:100%;
+    text-align: center;
+    margin-top:2em;
+    margin-bottom:8em;
+}
+
+/* FOOTER */
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background:#dcdcdc;
+    padding: 2rem;
+    height:200px;
+    text-align: center;
+}
+.footer1 span:nth-child(1){
+    font-size:2em;
+    font-weight: bold;
+}
+.footer1 span:nth-child(2){
+    font-size:1.1em;
+}
+.footer2{
+    width: 80%;
+}
+
+
+
+/* FONT */

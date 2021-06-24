@@ -1,0 +1,132 @@
+@charset 'utf-8';
+@import url('common.css');
+
+
+.notice-tb {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    /* max-width: 1060px; */
+    border-bottom: 2px solid #d2d2d2;
+    border-collapse: collapse;
+}
+.notice-tb .notice-cap{
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    letter-spacing: -0.05em;
+    
+}
+.notice-tb .notice-cap2{
+    /* height: 2px; */
+    /* background:#e5e5e5; */
+    margin-bottom: 1em;
+}
+
+.notice-tb tr th:nth-child(1){
+    width:5%;
+    min-width:70px;
+}
+.notice-tb tr th:nth-child(2){
+}
+.notice-tb tr td:nth-child(2){
+    text-align: left;
+}
+.notice-tb tr th:nth-child(3){
+    width:8%;
+    min-width:80px;
+}
+.notice-tb tr th:nth-child(4){
+    width:10%;
+    min-width:120px;
+}
+.notice-tb tr th:nth-child(5){
+    width:5%;
+    min-width:70px;
+}
+
+.notice-tb th{
+    padding: 1em;
+    border-top: 2px solid #d2d2d2;
+    border-bottom: 2px solid #d2d2d2;
+}
+.notice-tb td{
+    padding: 0.6em;
+}
+
+/* 사진 */
+.review-content{
+    display: flex;
+    align-items: flex-start;
+    /* letter-spacing: -0.1em; */
+}
+.review-pt-big{
+    width:10em; height: 10em;
+    background:lightgray;
+    background-image: url(../img/special1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0 1em;
+    flex-shrink: 0;
+}
+.review-pt{
+    width:3em; height: 3em;
+    background:lightgray;
+    background-image: url(../img/special1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0 1em;
+    flex-shrink: 0;
+}
+.review-star{
+    width:5.4em; height: 1em;
+    background-image: url(../img/star.png);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    background-position: center; 
+}
+.review-title-big{
+    margin: 0.3em 0;
+    font-weight: bold;
+}
+.review-title{
+    margin: 0.3em 0;
+}
+.review-comment{
+    background-color: rgba(241, 241, 241, 0.925);
+    padding: 1em;
+}
+
+.undertable{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.category-search{
+    margin-left:auto;
+    /* margin-right:1.5em; */
+    position: absolute;
+    /* top:1em; */
+    /* border:1px solid; */
+    height: 1em;
+    left:0;
+    top:2em;
+}
+.category-search input[type="search"]{
+    border: 0;
+    border-bottom: 2px solid;
+}
+.category-search input[type="search"]:focus{
+    outline:none;
+}
+.category-search input[type="image"]{
+    position:absolute;
+    right:0;
+    /* bottom:0.3em; */
+}
