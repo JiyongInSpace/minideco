@@ -74,11 +74,11 @@
     background-color: #f19ec2;
     display:flex;
     justify-content: space-between;
+    margin-bottom:31px;
 }
 .new-small2{
     background-repeat: no-repeat;
     background-color: #f6b37f;
-    margin-top:31px;
     display:flex;
     justify-content: space-between;
 }
@@ -214,6 +214,7 @@
     justify-content: center;
     align-items: center;
     margin-top:200px;
+    position:relative;
 }
 .banner-txt{
     font-size: 1.3em;
@@ -320,4 +321,88 @@
     background-image: url('../img/star.png');
     height: 1em; width: 5em;
     background-size: contain;
+}
+
+        /* 1279px ~ 992px */
+        /* 768~ 991 */
+        /* ~767 */
+
+@media( max-width: 1279px ){
+    .new-list, .onsale-list, .special-list, .review-list{
+        width:90%;
+    }
+    .best{
+        width:95%
+    }
+    .best-category{
+        width: 20%;
+        /* margin-right: 1%; */
+    }
+    .best-category-list{
+        padding: 3.5em 2em;
+    }
+    .best-category a{
+        font-size: 1.2em;
+    }
+}
+    
+@media( max-width: 991px ){
+    .special-item-con{
+        width:32%;
+    }
+    .special-item-con7, .special-item-con8{
+        display: none;
+    }
+    .best{
+        margin: 0 auto;
+        width:90%
+    }
+    .best-category{
+        display: none;
+    }
+    #category-select{
+        border: 0;
+        border-bottom: 1px solid;
+    }
+}     
+
+@media( max-width: 767px ){
+    .new-list{
+        flex-direction: column;
+    }
+    .new-big, .new-small{
+        width:100%;
+    }
+    .new-small1{
+        margin:0.5em 0;
+    }
+    .onsale-item-con{
+        width:48%;
+    }
+    .onsale-item-con3{
+        display: none;
+    }
+    .special-item-con{
+        width:48%;
+    }
+    .special-item-con7, .special-item-con8{
+        display: flex;
+    }
+    .banner{
+        margin-top:300px;
+    }
+    .banner-gom{
+        position:absolute;
+        margin-bottom: 0em;
+        bottom:100px;
+    }
+    .best-item-con{
+        width: 48%;
+    }
+    .review-item-con{
+        width: 48%;
+    }
+    .review-item-con3{
+        display: none;
+    }
 }

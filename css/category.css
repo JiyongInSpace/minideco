@@ -31,9 +31,9 @@
     /* margin-left: 20px; */
 }
 .category-header h2{
-    margin-bottom:2em
+    margin-bottom: 2em;
 }
-.size-search{
+.size-search {
     display: flex;
     align-items: center;
 }
@@ -65,27 +65,44 @@
     margin-left:auto;
     /* margin-right:1.5em; */
     position:relative;
+    /* display:block; */
     /* top:1em; */
+    /* border:1px solid; */
 }
 .category-search input[type="search"]{
     border: 0;
     border-bottom: 2px solid;
+    right:0.2em; bottom:0;
+    position: absolute;
 }
 .category-search input[type="search"]:focus{
     outline:none;
+}
+.category-search input[type="submit"]{
+    position:absolute;
+    right:-0.2em; bottom:0;
+    background: none;
+    border:0;
 }
 /* .category-search input[type="image"]{
     position:absolute;
     right:0; bottom:0.3em;
 } */
-.category-search input[type="submit"]{
-    position:absolute;
-    right:-0.3em; bottom:0;
-    background: none;
-    border:0;
-}
+
 .category-search input[type="submit"]:hover{
     color:lightgray;
+}
+
+/* 선택상자 */
+#category-select{
+    border: 0;
+    border-bottom:1px solid;
+    font-size: 1.2em;
+    padding:1em;
+    margin-bottom: 3em;
+    /* margin:0 auto; */
+    display:none;
+    /* transition:0.5s; */
 }
 
 
@@ -117,4 +134,71 @@
 }
 .category-item img{
     width: 100%;
+}
+
+@media( max-width: 1279px ){
+    .category{
+        width:95%;
+        /* border: 1px solid; */
+    }
+    .category-item-con{
+        width: 32%;
+    }
+    .category-nav-con{
+        width: 20%;
+    }
+    .category-nav{
+        margin-right: 2em;
+        /* border: 1px solid; */
+    }
+    .best-category a{
+        font-size: 1.2em;
+    }
+    .category-list{
+        width: 100%;
+    }
+}
+    
+@media( max-width: 991px ){
+    .category{
+        width:90%;
+        margin: 0 auto;
+    }
+    .category-nav-con{
+        display:none;
+    }
+
+    #category-select{
+        display:block;
+    }
+    main{
+        margin-top: -5em;
+    }
+
+}
+
+@media( max-width: 767px ){
+    .category-item-con{
+        width: 48%;
+    }
+    .category-header h2{
+        text-align: center;
+    }
+    .size-search{
+        margin-bottom:3em;
+        justify-content: center;
+    }
+    .category-search input[type="search"]{
+        left:50%; bottom:0.2em;
+        transform: translateX(-50%);
+    }
+    .category-search input[type="submit"]{
+        left:calc(50% + 65px); bottom:0.2em;
+    }
+    #category-select{
+        margin: 3em auto;
+    }
+    main{
+        margin-top: -8em;
+    }
 }

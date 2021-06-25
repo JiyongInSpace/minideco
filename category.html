@@ -12,11 +12,13 @@
 <body>
     
     <header class="header-1">
+        <input type="checkbox" id="burger" checked>
+        <label for="burger"><span>버거</span></label>
         <div class="header-2">
             <div class="header-3">
                 <div class="logo">
                     <!-- <img src="img/logo.png" alt="LOGO"></a> -->
-                    <a href="index.html"><span>M</span>INI<SPAN>D</SPAN>ECO</a>
+                    <div><a href="index.html"><span>M</span>INI<SPAN>D</SPAN>ECO</a></div>
                 </div>
                 <ul class="menu-1">
                     <li><a href="category.html">CATEGORY</a></li>
@@ -72,6 +74,7 @@
             </div>
         </div>
     </header>
+
     
         <div class="sns-bt">
             <ul>
@@ -102,6 +105,18 @@
                 </ol>
             </div>
             <article class="category-list">
+                <select id="category-select">
+                    <option>DIY미니어처</option>
+                    <option>룸박스/케이스</option>
+                    <option>나무제품</option>
+                    <option>주방용품</option>
+                    <option>가구완제품</option>
+                    <option>소품류</option>
+                    <option>금속제품/조명</option>
+                    <option>천/레이스</option>
+                    <option>벽지/기타재료</option>
+                    <option>핸드메이드</option>
+                </select>
                 <div class="category-header">
                     <div><h2>나무제품</h2></div>
                     <div>
@@ -123,12 +138,11 @@
                                 <input type="radio" name="size" id="size-S">
                                 <label for="size-S"><span>S</span></label>
                             </div>
-                            <form class="category-search">
-                                <input type="search">
-                                <input type="submit" value="search" class="material-icons">
-                                <!-- <input type="image" src="img/search.jpg" alt=""></input> -->
-                            </form>
                         </div>
+                        <form class="category-search">
+                            <input type="search">
+                            <input type="submit" value="search" class="material-icons">
+                        </form>
                     </div>
                 </div>
                 <div class="category-item-con1 category-item-con">
@@ -531,9 +545,15 @@
         <div class="footer1">
             <span>CS CENTER</span> <span>고객센터 </span> 010 1234 1234 ㅣ OPEN AM 10:00 - PM 5:00 ㅣ SAT.SUN.HOLIDAY OFF
         </div>
-        <div class="footer2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-        </div>
+        <footer>
+            <div class="footer1">
+                <div><span>CS CENTER</span> <span>고객센터 </span></div> 010 1234 1234 ㅣ OPEN AM 10:00 - PM 5:00 ㅣ SAT.SUN.HOLIDAY OFF
+            </div>
+            <div class="footer2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+            </div>
+        </footer>
+    
     </footer>
 
 
