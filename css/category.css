@@ -191,6 +191,7 @@
     .category-search input[type="search"]{
         left:50%; bottom:0.2em;
         transform: translateX(-50%);
+        width:200px;
     }
     .category-search input[type="submit"]{
         left:calc(50% + 65px); bottom:0.2em;

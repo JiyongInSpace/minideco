@@ -375,6 +375,12 @@ input:focus {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    /* border:1px solid; */
+}
+@media ( max-width: 500px ){
+    .item-tag-price{
+    flex-direction: column;
+    }
 }
 .item-tag > h2{
     margin-bottom: 1rem;
@@ -383,6 +389,7 @@ input:focus {
     color:#959595;
     text-decoration: line-through;
     font-size: 0.8em;
+    
 }
 
 /* SNS */

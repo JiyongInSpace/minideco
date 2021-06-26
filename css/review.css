@@ -165,6 +165,9 @@ td>div>div:nth-child(1){
 }     
 
 @media( max-width: 767px ){
+    .review-content{
+        flex-direction: column;
+    }
     .notice-tb .notice-cap{
         text-align: center;
     }
