@@ -16,8 +16,8 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top:50%; right:52%;
-    transform: translateY(-50%);
+    top:50%; right:58%;
+    transform: translateY(-30%);
 }
 .main-2 div:nth-child(1){
     font-size: 6vw;
