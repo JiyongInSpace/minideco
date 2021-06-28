@@ -91,18 +91,12 @@
 .new-figure figcaption p:nth-child(1){
     font-size: 2em;
     margin-right: 1em;
-    letter-spacing: -0.15em;
 }
 .new-figure figcaption p:nth-child(2){
     font-size: 1em;
     margin-right: 2.5em;
-    letter-spacing: -0.15em;
 }
-.new-figure figcaption p:nth-child(3){
-    font-size: 1em;
-    margin-right: 2.5em;
-    letter-spacing: -0.15em;
-}
+
 
 /* 메인페이지 아티클 제목*/
 
@@ -286,6 +280,9 @@
 .best-item img{
     width:100%;
 }
+#category-select{
+    display:none;
+}
 
 
 /* REVIEW */
@@ -379,6 +376,7 @@
     #category-select{
         border: 0;
         border-bottom: 1px solid;
+        display: inline-block;
     }
 }     
 
