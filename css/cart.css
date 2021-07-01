@@ -76,6 +76,10 @@
     margin:0 1em;
     flex-shrink: 0;
 }
+.cart-info>div>div:nth-child(1){
+    margin-bottom:0.3em;
+}
+
 
 /* 합계 등 */
 .cart-total{
@@ -175,6 +179,9 @@ td>div>div:nth-child(2){
 }     
 
 @media( max-width: 767px ){
+    .use-info h2{
+        text-align: center;
+    }
     .cart-tb .cart-cap{
         text-align: center;
     }
@@ -197,5 +204,8 @@ td>div>div:nth-child(2){
     }
     .cart-pt1{
         margin:0em;
+    }
+    .cart-bt{
+        margin:1em auto;
     }
 }

@@ -241,7 +241,9 @@
     display: flex;
     justify-content:flex-end;
     flex-shrink: 0;
+    transition: 0.5s;
 }
+
 .best-category-list{
     line-height: 2.5;
     letter-spacing: -2.4px;
@@ -292,8 +294,9 @@
     justify-content: space-between;
     margin:0 auto;
     margin-top:179px;
-    margin-bottom:343px;
+    padding-bottom:343px;
     width:80%;
+
 }
 .review-item-con{
     display: flex;
@@ -408,6 +411,8 @@
         height: 12vw;
         top:1em;
         left:1em;
+        font-size: 3vw;
+
     }
     .special-item-con{
         width:48%;

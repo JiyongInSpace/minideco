@@ -55,7 +55,7 @@ a{text-decoration: none;}
     width:80%;
     height:80px;
     z-index: 3;
-    border-bottom:1px solid lightgray;
+
 }
 .logo a{
     font-family: 'NEXON Lv1 Gothic OTF Bold';    /* logo */
@@ -408,7 +408,7 @@ input:focus {
     align-items: center;
     z-index: 1;
     margin-top: 3em;
-
+    
 }
 .sns-bt ul li{
     margin: 0.5em;    
@@ -435,9 +435,16 @@ footer{
     /* height:200px; */
     text-align: center;
 }
+.footer1{
+    margin-bottom: 0.5em;
+}
+.footer1 div{
+    margin-bottom: 0.5em;
+}
 .footer1 span:nth-child(1){
     font-size:2em;
     font-weight: bold;
+    
 }
 .footer1 span:nth-child(2){
     font-size:1.1em;
