@@ -480,6 +480,7 @@ footer{
     .header-3{
         flex-direction: column;
         padding:1.5em 0;
+        border-bottom: 1px solid lightgray;
     }
     .header-3 .logo{
         align-self: flex-start;
