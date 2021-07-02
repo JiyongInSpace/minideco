@@ -163,8 +163,8 @@ label[for="burger"]::before{
     width:100%;
     text-align: center;
 }
-.header-2 .menu-1>li:hover>a {
-    color: gray;
+.header-2 .menu-1>li:hover, .header-2 .menu-1>li:hover>a {
+    color: lightslategray;
     /* font-size:18px; */
 }
 
@@ -216,6 +216,9 @@ label[for="exit"] span{
 label[for="id"], label[for="pw"]{
 visibility: hidden;
 position: absolute;
+width: 1px;
+height: 1px;
+opacity: 0;
 }
 
 /* MODAL(login) - input */

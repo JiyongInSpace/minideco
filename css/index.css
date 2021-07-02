@@ -88,11 +88,11 @@
     justify-content: space-around;
     text-align: right;
 }
-.new-figure figcaption p:nth-child(1){
+.new-figure figcaption h2{
     font-size: 2em;
     margin-right: 1em;
 }
-.new-figure figcaption p:nth-child(2){
+.new-figure figcaption p{
     font-size: 1em;
     margin-right: 2.5em;
 }
@@ -250,7 +250,7 @@
     text-align: center;
     padding: 3.5em;
 }
-.best-category a{
+.best-category a, .best-category h2{
     color: white;
     font-size:1.5em
 }
@@ -285,7 +285,12 @@
 #category-select{
     display:none;
 }
-
+label[for="category-select"]{
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
 
 /* REVIEW */
 
