@@ -104,7 +104,12 @@
     display:none;
     /* transition:0.5s; */
 }
-
+label[for="category-select"]{
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
 
 /* category list */
 

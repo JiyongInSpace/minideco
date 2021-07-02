@@ -77,13 +77,13 @@
         </div>
     </header>
 
-    
-        <div class="sns-bt">
-            <ul>
-                <li><a href="https://www.instagram.com/minideco2216/" target="_blank"><img src="img/insta.jpg" alt=""></a></li>
-                <li><a href="https://story.kakao.com/" target="_blank"><img src="img/kakao.jpg" alt=""></a></li>
-            </ul>
-        </div>
+    <div class="sns-bt">
+        <ul>
+            <li><a href="https://www.instagram.com/minideco2216/" target="_blank"><img src="img/insta.jpg" alt="insta"></a></li>
+            <li><a href="https://story.kakao.com/" target="_blank"><img src="img/kakao.jpg" alt="kakao"></a></li>
+            <li class="sns-hidden"></li>
+        </ul>
+    </div>
     <main>
         <div class="category">
             <div class="category-nav-con">
@@ -119,6 +119,7 @@
                     <option>벽지/기타재료</option>
                     <option>핸드메이드</option>
                 </select>
+                <label for="category-select">category</label>
                 <div class="category-header">
                     <div><h2>나무제품</h2></div>
                     <div>
@@ -142,7 +143,8 @@
                             </div>
                         </div>
                         <form class="category-search">
-                            <input type="search">
+                            <input type="search" id="search">
+                            <label for="search">search</label>
                             <input type="submit" value="search" class="material-icons">
                         </form>
                     </div>

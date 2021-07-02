@@ -64,12 +64,12 @@ a{text-decoration: none;}
 .logo a span:nth-child(1){
     font-family: 'NEXON Lv1 Gothic OTF Bold';
     font-size:1em;
-    color:lightskyblue;
+    color:rgb(194, 120, 24);
 }
 .logo a span:nth-child(2){
     font-family: 'NEXON Lv1 Gothic OTF Bold';
     font-size:1em;
-    color:pink;
+    color:rgba(236, 180, 105, 0.692);
 }
 #burger{
     display:none;
@@ -265,7 +265,14 @@ input:focus {
 
 /* .login-form div input{ width: 200px;} */
 
+/* 검색 */
 
+label[for="search"]{
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
 
 /* 
 상품 누를 때 호버효과     (figure에 position:relative;)
