@@ -213,6 +213,10 @@ label[for="exit"] span{
 #exit{
     display: none;
 }
+label[for="id"], label[for="pw"]{
+visibility: hidden;
+position: absolute;
+}
 
 /* MODAL(login) - input */
 .login-con{
