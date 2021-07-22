@@ -1,7 +1,9 @@
 // index.js
 
+const categoryUrl = `https://raw.githubusercontent.com/JiyongInSpace/minideco/main/data/category.json`;
+
 function init(){
-    fetch('../data/category.json')
+    fetch(categoryUrl)
     .then(res => res.json())
     .then(data => callback(data));
 
@@ -14,7 +16,7 @@ function init(){
             div.innerHTML =
             `<figure class="category-item">
                 <figcaption>
-                    <img src="${items.image}" alt="image${index}">
+                    <img src="../${items.image}" alt="image${index}">
                     <div class="fig-bg">
                         <div class="fig-bt1">
                             <a href=""><div>
