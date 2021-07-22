@@ -5,6 +5,7 @@
 
 /* category-nav */
 .category{
+    margin-top: 130px;
     display: flex;
     width: 90%;
 }
@@ -115,11 +116,18 @@ label[for="category-select"]{
 
 
 .category-list{
-    display:flex;
+    /* display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; */
+    width: 71%;
+}
+.category-item-cons{
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 71%;
+    width: 100%;
 }
 .category-item-con{
     display: flex;

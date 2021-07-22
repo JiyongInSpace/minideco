@@ -115,17 +115,6 @@ label[for="burger"]::before{
     opacity: 1;
     bottom:0px;
 }
-/* .menu-1 li:nth-child(2):hover .dropdown1{
-    opacity: 1;
-    width: 100px;
-    top:20px;
-}
-.menu-1 li:nth-child(3):hover .dropdown2{
-    opacity: 1;
-    width:80px;
-    left:-0.5em;
-    top:20px;
-} */
 
 .dropdown1, .dropdown2{
     position: absolute;
@@ -144,9 +133,7 @@ label[for="burger"]::before{
     transform: translate(-50%, 100%);
     /* display:none; */
 }
-/* .menu-1 li:nth-child(2) a:hover + .dropdown1{
-    display: flex;
-} */
+
 .dropdown1 li, .dropdown2 li{
     margin: 0.3em;
 }
@@ -263,7 +250,6 @@ input:focus {
     text-align: right;
 }
 
-/* .login-form div input{ width: 200px;} */
 
 /* 검색 */
 
@@ -292,35 +278,6 @@ label[for="search"]{
 .best-item:hover .fig-bg, .review-item:hover .fig-bg,
 .category-item:hover .fig-bg{
     opacity:1;
-}
-.fig-bg .fig-bt{
-    width:122px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.fig-bg .fig-bt div{
-    width: 34px; height: 34px;
-    background-color: rgba(255,255,255,0.5);
-    background-position:center;
-    background-size:70% 70%;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    transition: 0.5s
-}
-.fig-bg .fig-bt div:hover{
-    background-color: rgba(255,255,255,0.3);
-}
-
-.fig-bg .fig-bt a:nth-child(1) div{
-    background-image: url('../img/seemore.png');
-}
-.fig-bg .fig-bt a:nth-child(2) div{
-    background-image: url('../img/cart.png');
-}
-.fig-bg .fig-bt a:nth-child(3) div{
-    background-image: url('../img/heart.png');
 }
 
 /* 구글아이콘으로 만들어보기 */
@@ -352,35 +309,6 @@ label[for="search"]{
 .fig-bg .fig-bt1 div:hover span{
     color:white;
 }
-
-/* img src로 만들어보기 */
-.fig-bg .fig-bt2{
-    width:122px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.fig-bg .fig-bt2 div{
-    width: 34px; height: 34px;
-    background-color: rgba(255,255,255,0.5);
-    background-position:center;
-    background-size:70% 70%;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fig-bg .fig-bt2 div img{
-    width:75%;
-}
-.fig-bg .fig-bt2 div:hover{
-    background-color: rgba(255,255,255,0.3);
-}
-
-
 
 
 
@@ -448,10 +376,12 @@ label[for="search"]{
 .scroll-top{
     border-radius: 1em 0 0 0;
     background-color:rgb(194, 120, 24);
+    cursor: pointer;
 }
 .sns-hidden{
     border-radius: 0 0 0 1em;
     background-color:rgba(236, 180, 105);
+    cursor: pointer;
 }
 .sns-show {
     position: fixed;
@@ -467,9 +397,11 @@ label[for="search"]{
     border-radius: 1em 0 0 1em;
     font-size: 0.5em;
     transition: 0.5s;
+    cursor: pointer;
 }
 .sns-show.handle-hidden {
     transform: translateX(100%);
+    
 }
 
 
