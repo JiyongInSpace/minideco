@@ -133,6 +133,7 @@
     align-items: flex-start;
     width:80%;
     margin: 200px auto;
+    position: relative;
 }
 .onsale-item-con{
     display: flex;
@@ -142,14 +143,11 @@
     width:32%;
     
 }
-
 .onsale-item{
     width:100%;
     margin: 10px;
     position: relative;
 } 
-
-
 .onsale-item figcaption .onsale-percent{
     width: 7vw;
     height: 7vw;
@@ -175,7 +173,6 @@
 
 .banner{
     background-color: sandybrown;
-    text-align: center;
     height: 122px;
     display: flex;
     justify-content: center;
@@ -283,6 +280,7 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top:276px;
+    position: relative;
 }
 .best-item-con{
     display: flex;
@@ -323,7 +321,7 @@ label[for="category-select"]{
     margin-top:179px;
     padding-bottom:343px;
     width:80%;
-
+    position: relative;
 }
 .review-item-con{
     display: flex;
@@ -432,7 +430,7 @@ label[for="category-select"]{
     .onsale-item-con{
         width:48%;
     }
-    .onsale-item-con3{
+    .onsale-item-con2{
         display: none;
     }
     .onsale-item figcaption .onsale-percent{
@@ -448,7 +446,7 @@ label[for="category-select"]{
     .special-item-con{
         width:12%;
     }
-    .special-item-con7, .special-item-con8{
+    .special-item-con6, .special-item-con7{
         display: flex;
     }
     .banner{

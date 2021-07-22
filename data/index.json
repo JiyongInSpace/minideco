@@ -25,7 +25,6 @@
     "review":[
         {"username": "김** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
         {"username": "최** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
-        {"username": "김** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
-        {"username": "이** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"}
+        {"username": "김** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"}
     ]
 }
