@@ -1,13 +1,31 @@
 {
-    
+    "onsale":[
+        {"name": "상품이름1", "percent": "20", "price": "35,000", "priceOnSale": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/sale1.jpg"},
+        {"name": "상품이름2", "percent": "20", "price": "35,000", "priceOnSale": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/sale1.jpg"},
+        {"name": "상품이름3", "percent": "20", "price": "35,000", "priceOnSale": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/sale1.jpg"}
+    ],
     "special":[
-        {"name": "상품이름1", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
-        {"name": "상품이름2", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
-        {"name": "상품이름3", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
-        {"name": "상품이름4", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
-        {"name": "상품이름5", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
-        {"name": "상품이름6", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
-        {"name": "상품이름7", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
-        {"name": "상품이름8", "price": "35,000원", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"}
+        {"name": "상품이름1", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름2", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름3", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름4", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름5", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름6", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름7", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름8", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"}
+    ],
+    "best":[
+        {"name": "상품이름1", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름2", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름3", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름4", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름5", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"},
+        {"name": "상품이름6", "price": "35,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/special1.jpg"}
+    ],
+    "review":[
+        {"username": "김** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
+        {"username": "최** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
+        {"username": "김** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
+        {"username": "이** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"}
     ]
 }
