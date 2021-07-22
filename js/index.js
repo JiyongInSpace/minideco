@@ -37,9 +37,10 @@ hiddenSns();
 
 // special json
 const specialList = document.querySelector(".special-list")
+const specialUrl = `https://raw.githubusercontent.com/JiyongInSpace/minideco/main/data/index.json`;
 
 function init(){
-    fetch('../data/index.json')
+    fetch(specialUrl)
     .then(res => res.json())
     .then(data => callback(data));
 

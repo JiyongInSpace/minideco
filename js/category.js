@@ -16,7 +16,7 @@ function init(){
             div.innerHTML =
             `<figure class="category-item">
                 <figcaption>
-                    <img src="../${items.image}" alt="image${index}">
+                    <img src="${items.image}" alt="image${index}">
                     <div class="fig-bg">
                         <div class="fig-bt1">
                             <a href=""><div>
