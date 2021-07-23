@@ -251,21 +251,11 @@ label[for="category-select"]{
 }
 .sp-pt{
     width: 306px; height: 338px;
-    background-image: url(/img/special1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
 }
 
 .sp-mini-pt1, .sp-mini-pt2, .sp-mini-pt3{
     width: 77px; height:85px;
     margin: 0 12.5px 10px 12.5px;
-    background-image: url(/img/special1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
 }
 /* 설명 */
 
@@ -302,14 +292,20 @@ label[for="category-select"]{
 .sp-info2 .sp-pm div:nth-child(2){
     background:white;
     width: 34px; height: 21px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sp-info2 .sp-pm div:nth-child(1){
-    font-size:1.5em;
+    font-size:1em;
     color:white;
+    padding-left: 0.3em;
 }
 .sp-info2 .sp-pm div:nth-child(3){
-    font-size:2em;
+    font-size:1em;
     color:white;
+    padding-right: 0.3em;
 }
 .sp-info2 .sp-price{
     text-align: right;
@@ -357,13 +353,13 @@ label[for="category-select"]{
 }
 .sp-bt div:nth-child(2) p{
     width: 20px; height: 20px;
-    background-image: url(/img/cart.png);
+    background-image: url(../img/cart.png);
     background-size: cover;
     background-position: center;
 }
 .sp-bt div:nth-child(3) p{
     width: 18px; height: 18px;
-    background-image: url(/img/heart.png);
+    background-image: url(../img/heart.png);
     background-size: cover;
     background-position: center;
 }

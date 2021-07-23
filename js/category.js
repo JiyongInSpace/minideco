@@ -4,6 +4,7 @@ const categoryUrl = `https://raw.githubusercontent.com/JiyongInSpace/minideco/ma
 
 
 const productModal = document.querySelector(".sp-bg");
+const productModalBlock = document.querySelector(".sp-modal")
 const productBigPt = document.querySelector(".sp-pt");
 const productMiniPt = document.querySelector(".sp-mini-pt");
 const productInfo = document.querySelector(".sp-info1");
@@ -13,12 +14,18 @@ function showProduct(name, detail, price, price2, pt, pt1, pt2, pt3){
     productModal.style.display = "flex";
     productBigPt.style.background = `url("img/${pt}") no-repeat center / cover`;
     productMiniPt.innerHTML = 
-    `<div class="sp-mini-pt1" style="background:url("img/${pt1}") no-repeat center / cover"></div>
-    <div class="sp-mini-pt2" style="background:url("img/${pt2}") no-repeat center / cover"></div>
-    <div class="sp-mini-pt3" style="background:url("img/${pt3}") no-repeat center / cover"></div>`;
+    `<div class="sp-mini-pt1" style="background: url('img/${pt1}') no-repeat center / cover"></div>
+    <div class="sp-mini-pt2" style="background: url('img/${pt2}') no-repeat center / cover"></div>
+    <div class="sp-mini-pt3" style="background: url('img/${pt3}') no-repeat center / cover"></div>`;
     productInfo.innerHTML = `<h2>${name}</h2> ${detail}`;
     productPrice.innerHTML = `<p>${price}원</p><p>${price2}원</p>`
 } 
+function hideProduct(e){
+    if(e.target.className === "sp-bg"){
+    this.style.display = "none"};
+}
+
+productModal.addEventListener("click", hideProduct)
 
 function init(){
     fetch(categoryUrl)
