@@ -39,12 +39,17 @@ const bestList = document.querySelector(".best-list");
 const reviewList = document.querySelector(".review-list");
 const indexUrl = `https://raw.githubusercontent.com/JiyongInSpace/minideco/main/data/index.json`;
 
+
+
 function init(){
     fetch(indexUrl)
     .then(res => res.json())
     .then(data => callback(data));
 
     function callback(data){
+        
+        
+
         // onsale
         data.onsale.forEach((items, index) => {
             const div = document.createElement("div");
@@ -82,6 +87,7 @@ function init(){
                 </div>
             </div>`;
             onsaleList.appendChild(div);
+            
         })
 
         // special
@@ -120,6 +126,7 @@ function init(){
                 </div>
             </div>`;
             specialList.appendChild(div);
+
         })
 
         // best
@@ -201,6 +208,7 @@ function init(){
     }
 }
 window.addEventListener('load', init);
+
 
 // special slide
 const leftBtn = document.querySelector(".slide-left");

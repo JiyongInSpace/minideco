@@ -216,3 +216,155 @@ label[for="category-select"]{
         margin-top: -8em;
     }
 }
+
+
+
+
+/* 상품페이지 */
+/* MODAL */
+.sp-bg{
+    position:fixed;
+    top:80px;
+    bottom:0;
+    right:0;
+    left:0;
+    /* background:rgba(0,0,0,0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    display: none;
+}
+.sp-bg .sp-modal{
+    border: 3px solid rgba(0, 0, 0, 0.15);
+    background:white;
+    width:850px; height: 460px;
+    text-align: center;
+    position:relative;
+}
+.sp-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+.sp-pt{
+    width: 306px; height: 338px;
+    background-image: url(/img/special1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.sp-mini-pt1, .sp-mini-pt2, .sp-mini-pt3{
+    width: 77px; height:85px;
+    margin: 0 12.5px 10px 12.5px;
+    background-image: url(/img/special1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+/* 설명 */
+
+.sp-info{
+    width: 260px;
+    height: 300px;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:2em;
+}
+.sp-info .sp-info1 h2{
+    margin-bottom: 1em;
+}
+.sp-info .sp-info1{
+    font-size: 0.8em;
+}
+/* 갯수 + 가격 */
+.sp-info2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sp-info2 .sp-pm{
+    width: 76px; height: 23px;
+    background:#f19ec2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.sp-info2 .sp-pm div:nth-child(2){
+    background:white;
+    width: 34px; height: 21px;
+}
+.sp-info2 .sp-pm div:nth-child(1){
+    font-size:1.5em;
+    color:white;
+}
+.sp-info2 .sp-pm div:nth-child(3){
+    font-size:2em;
+    color:white;
+}
+.sp-info2 .sp-price{
+    text-align: right;
+}
+.sp-info2 .sp-price p:nth-child(1){
+    color:#9b9b9b;
+    font-size: 0.7em;
+    text-decoration: line-through;
+    letter-spacing: -0.05em;
+}
+.sp-info2 .sp-price p:nth-child(2){
+    letter-spacing: -0.05em;
+    font-weight: bold;
+}
+
+
+
+/* 버튼3개 */
+.sp-bt{
+    display: flex;
+    justify-content: space-between;
+}
+.sp-bt1{
+    width:80px;
+    height:30px;
+    background-color: #c490bf;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sp-bt1 p{   
+    color:white;
+    font-size: 0.8em;
+}
+.sp-bt2{
+    width:80px;
+    height:30px;
+    border: 1px solid #c490bf;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+.sp-bt div:nth-child(2) p{
+    width: 20px; height: 20px;
+    background-image: url(/img/cart.png);
+    background-size: cover;
+    background-position: center;
+}
+.sp-bt div:nth-child(3) p{
+    width: 18px; height: 18px;
+    background-image: url(/img/heart.png);
+    background-size: cover;
+    background-position: center;
+}
+
