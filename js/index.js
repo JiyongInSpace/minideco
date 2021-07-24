@@ -124,12 +124,11 @@ function init(){
 
         // best
         for(let i=0; i<6; i++){
-            console.log(data.best[i].name);
             const div = document.createElement("div");
             div.className = `best-item-con${i} best-item-con`;
             div.innerHTML =
             `<figure class="best-item">
-                <img src="${data.best[i].image}" alt="best${i}">
+                <img src="img/${data.best[i].image}" alt="best${i}">
                     <div class="fig-bg">
                     <div class="fig-bt1">
                         <a href="category.html"><div>
@@ -239,7 +238,7 @@ function changeCategory(e){
             div.className = `best-item-con${i} best-item-con`;
             div.innerHTML =
             `<figure class="best-item">
-                <img src="${data.best[j+i].image}" alt="best${i}">
+                <img src="img/${data.best[j+i].image}" alt="best${i}">
                     <div class="fig-bg">
                     <div class="fig-bt1">
                         <a href="category.html"><div>
