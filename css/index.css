@@ -121,7 +121,7 @@
 .list-title-best{
     position: absolute;
     left: 0;
-    top: -4.5em;
+    top: -2.5em;
     white-space: nowrap;
 }
 
@@ -148,7 +148,7 @@
     margin: 10px;
     position: relative;
 } 
-.onsale-item figcaption .onsale-percent{
+.onsale-item .onsale-percent{
     width: 7vw;
     height: 7vw;
     background-color: #f02e3d;

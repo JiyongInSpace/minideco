@@ -116,10 +116,6 @@ label[for="category-select"]{
 
 
 .category-list{
-    /* display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start; */
     width: 71%;
 }
 .category-item-cons{
@@ -128,6 +124,14 @@ label[for="category-select"]{
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    position: relative;
+}
+.category-item-con:hover .item-tag{
+    font-weight: bold;
+}
+.category-item-con:hover img{
+    border: 1px solid;
+    transform: scale(1.04);
 }
 .category-item-con{
     display: flex;
@@ -135,6 +139,7 @@ label[for="category-select"]{
     justify-content: center;
     align-items: center;
     width: 24%;
+    
 }
 .category-item-con .item-tag{
     width: 100%;
@@ -147,6 +152,7 @@ label[for="category-select"]{
 }
 .category-item img{
     width: 100%;
+    transition: 0.3s;
 }
 
 @media( max-width: 1279px ){
@@ -279,6 +285,7 @@ label[for="category-select"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 60px;
 }
 .sp-info2 .sp-pm{
     width: 76px; height: 23px;
@@ -309,6 +316,7 @@ label[for="category-select"]{
 }
 .sp-info2 .sp-price{
     text-align: right;
+    
 }
 .sp-info2 .sp-price p:nth-child(1){
     color:#9b9b9b;
@@ -320,8 +328,17 @@ label[for="category-select"]{
     letter-spacing: -0.05em;
     font-weight: bold;
 }
-
-
+.sum{
+    cursor: pointer;
+}
+.sum:hover{
+    font-weight: bold;
+}
+.total-price{
+    font-size: 1.5em;
+    text-align: right;
+    font-weight: bolder;
+}
 
 /* 버튼3개 */
 .sp-bt{
@@ -340,6 +357,7 @@ label[for="category-select"]{
 .sp-bt1 p{   
     color:white;
     font-size: 0.8em;
+    transition: 0.2s;
 }
 .sp-bt2{
     width:80px;
@@ -351,16 +369,28 @@ label[for="category-select"]{
     align-items: center;
     margin-left: auto;
 }
-.sp-bt div:nth-child(2) p{
-    width: 20px; height: 20px;
-    background-image: url(../img/cart.png);
-    background-size: cover;
-    background-position: center;
-}
-.sp-bt div:nth-child(3) p{
-    width: 18px; height: 18px;
-    background-image: url(../img/heart.png);
-    background-size: cover;
-    background-position: center;
+.sp-bt span{
+    font-size: 1.2em;
+    transition: 0.2s;
 }
 
+.sp-bt div:hover p,
+.sp-bt div:hover span{
+    font-weight: bold;
+}
+.sp-bt div:active span{
+    transform:scale(0.90);
+}
+.sp-bt div{
+    cursor: pointer;
+}
+
+.modal-exit{
+    width:1.3em; height:1.3em;
+    position: absolute;
+    top: 1em; right: 1em;
+    background-image: url('../img/x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.4);
+}

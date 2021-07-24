@@ -275,12 +275,10 @@ label[for="search"]{
     opacity:0;
 }
 .special-item:hover .fig-bg, .onsale-item:hover .fig-bg,
-.best-item:hover .fig-bg, .review-item:hover .fig-bg,
-.category-item:hover .fig-bg{
+.best-item:hover .fig-bg, .review-item:hover .fig-bg{
     opacity:1;
 }
 
-/* 구글아이콘으로 만들어보기 */
 .fig-bg .fig-bt1{
     width:122px;
     display: flex;

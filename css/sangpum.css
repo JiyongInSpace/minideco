@@ -30,11 +30,7 @@
 }
 .sp-pt{
     width: 306px; height: 338px;
-    background-image: url(/img/special1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+    background: url(/img/special1.jpg) no-repeat center / cover;
 }
 
 .sp-mini-pt1, .sp-mini-pt2, .sp-mini-pt3{
@@ -157,21 +153,3 @@
     display: flex;
 }
 
-
-/* 나가기 */
-label[for="exit"]{
-    position: absolute;
-    right: 0.5em;
-}
-label[for="exit"]::before{
-    content:"✕";
-}
-label[for="exit"] span{
-    overflow: hidden;
-    position: absolute;
-    width:1px; height: 1px;
-    opacity: 0;
-}
-#exit{
-    display: none;
-}
