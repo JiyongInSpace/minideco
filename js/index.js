@@ -47,7 +47,6 @@ function init(){
     function callback(data){
         
         
-
         // onsale
         data.onsale.forEach((items, index) => {
             const div = document.createElement("div");
@@ -58,10 +57,6 @@ function init(){
                 <h3 class="onsale-percent">${items.percent}%</h3>
                 <div class="fig-bg">
                     <div class="fig-bt1">
-                        <a href="category.html"><div>
-                            <span class="material-icons-outlined">
-                                open_in_new
-                                </span></div></a>
                         <a href=""><div>
                             <span class="material-icons-outlined">
                                 add_shopping_cart
@@ -95,10 +90,6 @@ function init(){
                 <img src="${items.image}" alt="special${index}">
                 <div class="fig-bg">
                     <div class="fig-bt1">
-                        <a href="category.html"><div>
-                            <span class="material-icons-outlined">
-                                open_in_new
-                                </span></div></a>
                         <a href=""><div>
                             <span class="material-icons-outlined">
                                 add_shopping_cart
@@ -129,21 +120,17 @@ function init(){
             div.innerHTML =
             `<figure class="best-item">
                 <img src="img/${data.best[i].image}" alt="best${i}">
-                    <div class="fig-bg">
-                    <div class="fig-bt1">
-                        <a href="category.html"><div>
-                            <span class="material-icons-outlined">
-                                open_in_new
-                                </span></div></a>
-                        <a href=""><div>
-                            <span class="material-icons-outlined">
-                                add_shopping_cart
-                                </span></div></a>
-                        <a href=""><div>
-                            <span class="material-icons-outlined">
-                            favorite
+                <div class="fig-bg">
+                <div class="fig-bt1">
+                    <a href=""><div>
+                        <span class="material-icons-outlined">
+                            add_shopping_cart
                             </span></div></a>
-                    </div>
+                    <a href=""><div>
+                        <span class="material-icons-outlined">
+                        favorite
+                        </span></div></a>
+                </div>
                 </div>
             </figure>
             <div class="item-tag">
@@ -168,10 +155,6 @@ function init(){
                 <img src="${items.image}" alt="review${index}">
                 <div class="fig-bg">
                     <div class="fig-bt1">
-                        <a href="category.html"><div>
-                            <span class="material-icons-outlined">
-                                open_in_new
-                                </span></div></a>
                         <a href=""><div>
                             <span class="material-icons-outlined">
                                 add_shopping_cart
