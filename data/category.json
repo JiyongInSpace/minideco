@@ -119,6 +119,6 @@
         {"name": "핸드메이드9", "price": "19,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "special1.jpg", "secondimage": "best1.jpg", "thirdimage": "special1.jpg"},
         {"name": "핸드메이드10", "price": "20,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "special1.jpg", "secondimage": "best1.jpg", "thirdimage": "special1.jpg"},
         {"name": "핸드메이드11", "price": "21,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "special1.jpg", "secondimage": "best1.jpg", "thirdimage": "special1.jpg"},
-        {"name": "핸드메이드12", "price": "22,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "special1.jpg", "secondimage": "best1.jpg", "thirdimage": "special1.jpg"},
+        {"name": "핸드메이드12", "price": "22,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "special1.jpg", "secondimage": "best1.jpg", "thirdimage": "special1.jpg"}
     ]
 }
