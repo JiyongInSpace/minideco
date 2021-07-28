@@ -409,7 +409,7 @@ label[for="search"]{
     width:100%;
     text-align: center;
     margin-top:2em;
-    margin-bottom:8em;
+    
 }
 
 /* FOOTER */
@@ -423,6 +423,7 @@ footer{
     padding: 2rem;
     /* height:200px; */
     text-align: center;
+    margin-top:8em;
 }
 .footer1{
     margin-bottom: 0.5em;

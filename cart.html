@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minideco</title>
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="js/cart.js" defer></script>
 </head>
 <body>
         
@@ -15,7 +17,6 @@
         <div class="header-2">
             <div class="header-3">
                 <h1 class="logo">
-                    <!-- <img src="img/logo.png" alt="LOGO"></a> -->
                     <div><a href="index.html"><span>M</span>INI<SPAN>D</SPAN>ECO</a></div>
                 </h1>
                 <ul class="menu-1">
@@ -75,70 +76,36 @@
         </div>
     </header>
 
+<!-- 목록 -->
 
-
-
+    <table class="cart-tb">
+        <caption class="cart-cap">내가 좋아한 상품</caption>
+        <thead>
+            <tr>
+                <th>번호</th><th>상품정보</th><th>금액</th><th>옵션</th><th>비고</th>
+            </tr>
+        </thead>
+        <tbody class="liked-tbody">
+           <!-- json -->
+        </tbody>
+        
+    </table>
     <table class="cart-tb">
         <caption class="cart-cap">장바구니</caption>
         <thead>
             <tr>
-                <th>번호</th><th>상품정보</th><th>수량</th><th>금액</th><th>옵션</th>
+                <th>번호</th><th>상품정보</th><th>수량</th><th>금액</th><th>옵션</th><th>비고</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td class="cart-info">
-                    <figure class="cart-pt1"></figure>
-                    <div>
-                        <div>(L) DIY 행거 - B형 13,000원</div>
-                        <div>수량: 2<br>
-                        금액: 26,000원<br>
-                        변경 삭제</div>
-                    </div>
-                </td>
-                <td>2</td>
-                <td>26,000원</td>
-                <td>변경 삭제</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td class="cart-info">
-                    <figure class="cart-pt1"></figure>
-                    <div>
-                        <div>(L) DIY 행거 - B형 13,000원</div>
-                        <div>수량: 2<br>
-                        금액: 26,000원<br>
-                        변경 삭제</div>
-                    </div>
-                </td>
-                <td>2</td>
-                <td>26,000원</td>
-                <td>변경 삭제</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td class="cart-info">
-                    <figure class="cart-pt1"></figure>
-                    <div>
-                        <div>(L) DIY 행거 - B형 13,000원</div>
-                        <div>수량: 2<br>
-                        금액: 26,000원<br>
-                        변경 삭제</div>
-                    </div>
-                </td>
-                <td>2</td>
-                <td>26,000원</td>
-                <td>변경 삭제</td>
-            </tr>
-            
-
+        <tbody class="cart-tbody">
+            <!-- json -->
         </tbody>
     </table>
+
     <div class="cart-total">
         <div></div>
         <div>상품 합계금액<br>배송비<br><span>총 금액</span></div>
-        <div>78,000원<br>3,000원<br><span>81,000원</span></div>
+        <div><span class="total-money"></span>원<br>3,000원<br><span class="total-money2"></span>원</div>
         <div class="cart-bt"><a href=""><p>구매하기</a></p></a></div>
     </div>
     

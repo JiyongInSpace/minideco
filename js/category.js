@@ -18,10 +18,25 @@ let totalPrice = document.querySelector(".total-price");
 let productNum;
 let productPriceSum;
 
+const likeBtn = document.querySelector(".like-bt");
+let likeItems;
+if(localStorage.liked == ''){
+    likeItems = [];
+} else {
+    likeItems = localStorage.liked.split(',');
+}
+const cartBtn = document.querySelector(".cart-bt");
+let cartItems;
+if(localStorage.cart == null){
+    cartItems = [];
+} else {
+    cartItems = localStorage.cart.split(',');
+}
+
 
 const numSum = document.querySelectorAll(".sum");
 
-function showProduct(name, detail, price, price2, pt, pt2, pt3, num){
+function showProduct(name, detail, price, price2, pt, pt2, pt3, num, num2){
     productModal.style.display = "flex";
     productBigPt.style.background = `url("img/${pt}") no-repeat center / cover`;
     productMiniPt.innerHTML = 
@@ -36,6 +51,12 @@ function showProduct(name, detail, price, price2, pt, pt2, pt3, num){
     productPriceSum = price2;
     totalPrice.innerText = `총 ${price2}원`;
     
+    if(cartItems.includes(num.toString())){
+        cartBtn.classList.add("cart");
+    } else {
+        cartBtn.classList.remove("cart");
+    }
+
     if(likeItems.includes(num.toString())){
         likeBtn.classList.add("liked");
     } else {
@@ -73,13 +94,8 @@ numSum.forEach((sign) => {
 
 
 // 좋아요
-const likeBtn = document.querySelector(".like-bt");
-let likeItems;
-if(localStorage.liked == null){
-    likeItems = [];
-} else {
-    likeItems = localStorage.liked.split(',');
-}
+
+
 
 
 function iLikeIt(event){
@@ -104,14 +120,34 @@ function iLikeIt(event){
 
 likeBtn.addEventListener("click", iLikeIt)
 
+// 장바구니에 담기
+
+
+
+function putCart(){
+    const productId = this.parentElement.parentElement.id;
+    if(cartItems.includes(productId)){
+        cartItems = cartItems.filter(cartItem => cartItem !== productId);
+        localStorage.setItem("cart", cartItems);
+        cartBtn.classList.remove("cart");
+    } else {
+        cartItems.push(productId);
+        localStorage.setItem("cart", cartItems);
+        cartBtn.classList.add("cart");
+    }
+};
+cartBtn.addEventListener("click", putCart);
 
 // 상품 json
+const categoryHeader = document.querySelector(".category-header h2");
+const categoryPages = document.querySelector(".pages")
+let pageNum = 1;
 
 function init(){
     fetch(categoryUrl)
     .then(res => res.json())
     .then(data => callback(data));
-
+    categoryHeader.innerText = 'DIY미니어처';
     function callback(data){
         const categoryCons = document.querySelector(".category-item-cons");
         categoryCons.innerHTML = '';
@@ -139,7 +175,6 @@ function init(){
             </div>`;
             div.addEventListener("click", event => showProduct(data.item[i].name, data.item[i].detail, data.item[i].price, data.item[i].price, data.item[i].image, data.item[i].secondimage, data.item[i].thirdimage, i));
             categoryCons.appendChild(div);
-            
         }
     }
 }
@@ -150,6 +185,7 @@ const category = document.querySelectorAll(".category-nav li a");
 
 function changeCategory(e){
     e.preventDefault();
+    categoryHeader.innerText = this.innerText;
     let j = parseInt(this.dataset.num) * 12;
     fetch(categoryUrl)
     .then(res => res.json())

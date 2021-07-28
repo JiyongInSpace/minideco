@@ -1,7 +1,9 @@
 @charset "utf-8";
 @import url('common.css');
 
-
+.material-icons{
+    cursor: default;
+}
 
 /* category-nav */
 .category{
@@ -21,54 +23,15 @@
     line-height: 2em;
     margin-right: 4em;
 }
-.category-nav a:hover{
+.category-nav a.sum:hover{
     font-weight: bold;
     text-decoration: underline;
 }
-
-/* category-header */
-.category-header{
-    width:100%;
-    /* margin-left: 20px; */
-}
-.category-header h2{
-    margin-bottom: 2em;
-}
-.size-search {
-    display: flex;
-    align-items: center;
-}
-.size-search div{
-    margin:0 7.5px;
-}
-.size-search input[type="radio"]{
-    display: none;
-}
-
-.size-search input + label span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:48px;
-    height:48px;
-    border: 1px solid;
-    border-radius: 2em;
-}
-.size-search input:checked + label span{
-    background: lightgray;
-    color: white;
-}
-
-
 /* 검색 */
 
 .category-search{
     margin-left:auto;
-    /* margin-right:1.5em; */
     position:relative;
-    /* display:block; */
-    /* top:1em; */
-    /* border:1px solid; */
 }
 .category-search input[type="search"]{
     border: 0;
@@ -85,11 +48,6 @@
     background: none;
     border:0;
 }
-/* .category-search input[type="image"]{
-    position:absolute;
-    right:0; bottom:0.3em;
-} */
-
 .category-search input[type="submit"]:hover{
     color:lightgray;
 }
@@ -99,7 +57,7 @@
     border: 0;
     border-bottom:1px solid;
     font-size: 1.2em;
-    padding:1em;
+    padding:0.5em;
     margin-bottom: 3em;
     /* margin:0 auto; */
     display:none;
@@ -182,6 +140,7 @@ label[for="category-select"]{
     .category{
         width:90%;
         margin: 0 auto;
+        margin-top: 130px;
     }
     .category-nav-con{
         display:none;
@@ -201,11 +160,7 @@ label[for="category-select"]{
         width: 48%;
     }
     .category-header h2{
-        text-align: center;
-    }
-    .size-search{
-        margin-bottom:3em;
-        justify-content: center;
+        display:none;
     }
     .category-search input[type="search"]{
         left:50%; bottom:0.2em;
@@ -397,6 +352,24 @@ label[for="category-select"]{
     background-repeat: no-repeat;
     filter: opacity(0.4);
 }
+
+/* 장바구니버튼 */
+.cart-bt:hover span{
+    color: gold;
+    
+}
+.cart-bt:hover{
+    border: 1px solid gold;
+}
+.cart-bt.cart{
+    background-color: gold;   
+    border:2px solid gold;
+}
+.cart-bt.cart span{
+    color: black;
+}
+
+
 /* 좋아요버튼 */
 .like-bt:hover span{
     color: pink;
