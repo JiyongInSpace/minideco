@@ -3,12 +3,11 @@ const categoryUrl = `https://raw.githubusercontent.com/JiyongInSpace/minideco/ma
 const likedTbody = document.querySelector(".liked-tbody");
 const cartTbody = document.querySelector(".cart-tbody");
 let likedItems, cartItems;
-if(localStorage.liked == ''){
-    likedItems = [];
+if(localStorage.liked === null || localStorage.liked === '' || localStorage.liked === undefined){
 } else {
     likedItems = localStorage.getItem("liked").split(",").map(Number);
 } 
-if(localStorage.cart == '' || localStorage.cart === undefined){
+if(localStorage.cart === null || localStorage.cart === '' || localStorage.cart === undefined){
     cartItems = [];
 } else {
     cartItems = localStorage.getItem("cart").split(",").map(Number);
@@ -50,7 +49,7 @@ function inLiked(){
     .then(data => callback(data));
 
     function callback(data){
-        if(localStorage.liked == ''){
+        if(localStorage.liked === null || localStorage.liked === '' || localStorage.liked === undefined){
             const tr = document.createElement("tr");
             tr.innerHTML = 
             `<td></td>
@@ -95,7 +94,7 @@ function inCart(){
 
     function callback(data){
         cartTbody.innerHTML = '';
-        if(localStorage.cart == ''){
+        if(localStorage.cart === null || localStorage.cart === '' || localStorage.cart === undefined){
             const tr = document.createElement("tr");
             tr.innerHTML = 
             `<td></td>

@@ -370,7 +370,7 @@ label[for="category-select"]{
 }
 
 
-/* 좋아요버튼 */
+/* 좋아요버튼 장바구니버튼 */
 .like-bt:hover span{
     color: pink;
 }
@@ -381,7 +381,7 @@ label[for="category-select"]{
 .like-bt.liked span{
     color: white;
 }
-.category-item-con .category-item span{
+.category-item-con .category-item span:last-child{
     position: absolute;
     top: 10px; right: 10px;
     color: pink;
@@ -389,14 +389,33 @@ label[for="category-select"]{
     display: none;
 }
 
-.category-item-con.liked .category-item span{
+.category-item-con.liked .category-item span:last-child{
     display: inline;
 }
 
 
-.category-item-con:hover .category-item span{
+.category-item-con:hover .category-item span:last-child{
     transform: scale(1.3);
 }
+
+.category-item-con .category-item span:nth-child(2){
+    position: absolute;
+    top: 10px; right: 40px;
+    color: gold;
+    transition: 0.3s;
+    display: none;
+}
+
+.category-item-con.cart .category-item span:nth-child(2){
+    display: inline;
+}
+
+
+.category-item-con:hover .category-item span:nth-child(2){
+    transform: scale(1.3);
+}
+
+
 
 
 

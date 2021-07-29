@@ -6,14 +6,21 @@ const boardTitle = document.querySelector(".board-cap")
 
 function showBoardItem(){
     const activeNow = document.querySelectorAll(".active");
-    activeNow.forEach((actives) => {
-        actives.classList.toggle("active");
-    })
-    this.childNodes[2].childNodes.forEach((child) => {
-        if(child.nodeName == "FIGURE" || child.nodeName == "DIV"){
-            child.classList.toggle("active");
-        }
-    })
+    if(this.childNodes[2].childNodes[1].classList.contains("active")){
+        activeNow.forEach((actives) => {
+            actives.classList.toggle("active");
+        })
+    } else {
+        activeNow.forEach((actives) => {
+            actives.classList.toggle("active");
+        })
+        this.childNodes[2].childNodes.forEach((child) => {
+            if(child.nodeName == "FIGURE" || child.nodeName == "DIV"){
+                child.classList.toggle("active");
+            }
+        })
+    }
+    
 }
 
 function init(){

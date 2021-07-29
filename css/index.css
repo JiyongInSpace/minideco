@@ -54,6 +54,7 @@
     background-size:cover;
     margin-right:20px;
     position:relative;
+    transition: 0.5s;
 }
 .new-big img{
     width: 100%;
@@ -63,7 +64,8 @@
     width:100%;
     background:#d3b9ba;
     bottom:0;
-    height:25%;
+    height:25%; 
+    transition: all 0.5s ease-in;
 }
 .new-small{
     width:49%;
@@ -73,23 +75,42 @@
 }
 .new-small1{
     background-repeat: no-repeat;
-    background-color: #f19ec2;
     display:flex;
     justify-content: space-between;
     margin-bottom:31px;
 }
 .new-small2{
     background-repeat: no-repeat;
-    background-color: #f6b37f;
     display:flex;
     justify-content: space-between;
+}
+.new-figure{
+    position: relative;
 }
 .new-figure figcaption{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: right;
+    
 }
+.new-small1 figcaption, .new-small2 figcaption{
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width: 50%;
+    transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.new-small1 figcaption{
+    background-color: #f19ec2;
+}
+.new-small2 figcaption{
+    background-color: #f6b37f;
+}
+
+
 .new-figure figcaption h2{
     font-size: 2em;
     margin-right: 1em;
@@ -98,6 +119,23 @@
     font-size: 1em;
     margin-right: 2.5em;
 }
+.new-small1, .new-small2{
+    transition: 0.5s;
+}
+.new-big.scroll-effect{
+    opacity: 0;
+}
+.new-small1.scroll-effect, .new-small2.scroll-effect{
+    opacity: 0;
+}
+.new-big.scroll-effect figcaption{
+    height: 100%;
+}
+.new-small1.scroll-effect figcaption,
+.new-small2.scroll-effect figcaption{
+    width: 100%;
+}
+
 
 
 /* 메인페이지 아티클 제목*/
@@ -134,23 +172,29 @@
     width:80%;
     margin: 200px auto;
     position: relative;
+    transition: 0.5s;
 }
 .onsale-item-con{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:32%;
-    
+    width:24%;
 }
+.onsale-list.scroll-effect{
+    transform: translateY(20%);
+    opacity: 0;
+}
+
 .onsale-item{
     width:100%;
     margin: 10px;
     position: relative;
 } 
 .onsale-item .onsale-percent{
-    width: 7vw;
-    height: 7vw;
+    width: 5vw;
+    height: 5vw;
+    font-size: 1.5vw;
     background-color: #f02e3d;
     border-radius: 100px;
     display: flex;
@@ -159,7 +203,6 @@
     position: absolute;
     top:15px; left:15px;
     color: white;
-    font-size: 2vw;
     transform:rotate(-20deg);
 }
 .onsale-item img{
@@ -179,6 +222,7 @@
     align-items: center;
     margin-top:270px;
     position:relative;
+    transition: 0.5s;
 }
 .banner-txt{
     font-size: 1.3em;
@@ -189,6 +233,15 @@
 .banner-gom{
     margin-bottom: 2em;
     animation:gomgom 1s linear infinite;
+}
+.banner.scroll-effect{
+    transform: translateX(100%)
+}
+.banner-gom img{
+    transition: 1s;
+}
+.banner-gom.scroll-effect img{
+    width: 1px;
 }
 @keyframes gomgom{
     0%{transform: translateX(0px);}
@@ -232,18 +285,29 @@
     margin-top:100px;
     overflow: hidden;
     position: relative;
+    transition: 0.5s;
+}
+.special-slide.scroll-effect{
+    transform: translateY(20%);
+    opacity: 0;
 }
 .slide-left{
     position: absolute;
-    top:50%;
+    top:45%;
+    left: -0.5em;
     z-index: 1;
 }
 .slide-right{
     position: absolute;
-    top:50%;
-    right: 0;
+    top:45%;
+    right: -0.5em;
     z-index: 1;
 }
+.slide-left span, .slide-right span{
+    font-size: 3em;
+    cursor: pointer;
+}
+
 
 /* BEST */
 
@@ -251,6 +315,7 @@
     display: flex;
     width:90%;
     margin-top:1em;
+    position: relative;
 }
 .best-category{
     background-color: #acd598;
@@ -260,8 +325,13 @@
     display: flex;
     justify-content:flex-end;
     flex-shrink: 0;
-    transition: 0.5s;
+    transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
+.best-category.scroll-effect{
+    transform:translateX(-100%);
+}
+
 
 .best-category-list{
     line-height: 2.5;
@@ -281,6 +351,11 @@
     align-items: flex-start;
     margin-top:276px;
     position: relative;
+    transition: all 0.5s;
+}
+.best-list.scroll-effect{
+    transform: translateX(100%);
+    opacity: 0;
 }
 .best-item-con{
     display: flex;
@@ -311,6 +386,16 @@ label[for="category-select"]{
     width: 1px;
     height: 1px;
 }
+.moreView{
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    text-decoration: underline;
+}
+.moreView:hover{
+    font-weight: bold;
+}
+
 
 /* REVIEW */
 
@@ -319,9 +404,14 @@ label[for="category-select"]{
     justify-content: space-between;
     margin:0 auto;
     margin-top:179px;
-    padding-bottom:343px;
+    padding-bottom:153px;
     width:80%;
     position: relative;
+    transition: 0.5s;
+}
+.review-list.scroll-effect{
+    transform: translatey(20%);
+    opacity: 0;
 }
 .review-item-con{
     display: flex;
@@ -372,20 +462,23 @@ label[for="category-select"]{
 }
     
 @media( max-width: 991px ){
-    /* .main-1{
-        height: 60vw;
-        background-image: url(../img/main.png);
-        background-position:center;
-        background-size:cover;
-    }
-    .main-1 img{
-        display: none;
-    } */
-    .new-figure figcaption p:nth-child(1){
+
+    .new-figure figcaption h2{
         font-size:3vw;
     }
-    .new-figure figcaption p:nth-child(2){
+    .new-figure figcaption p{
         margin-right: 1.5em;
+    }
+    .onsale-item-con4{
+        display: none;
+    }
+    .onsale-item-con{
+        width:32%;
+    }
+    .onsale-item .onsale-percent{
+        width: 8vw;
+        height: 8vw;
+        font-size: 2.2vw;
     }
     .special-list{
         width: 266%;
@@ -393,9 +486,6 @@ label[for="category-select"]{
     .special-item-con{
         width:12%;
     }
-    /* .special-item-con7, .special-item-con8{
-        display: none;
-    } */
     .best{
         margin: 0 auto;
         width:90%
@@ -408,6 +498,10 @@ label[for="category-select"]{
         border-bottom: 1px solid;
         display: inline-block;
     }
+    .slide-left span, .slide-right span{
+        font-size: 2em;
+    }
+    
 }     
 
 @media( max-width: 767px ){
@@ -421,21 +515,21 @@ label[for="category-select"]{
     .new-small1{
         margin:0.5em 0;
     }
-    .new-figure figcaption p:nth-child(1){
-        font-size:5vw;
+    .new-figure figcaption h2{
+        font-size:6vw;
     }
-    .new-figure figcaption p:nth-child(2){
+    .new-figure figcaption p{
         font-size:4vw;
     }
     .onsale-item-con{
         width:48%;
     }
-    .onsale-item-con2{
+    .onsale-item-con3{
         display: none;
     }
-    .onsale-item figcaption .onsale-percent{
-        width: 12vw;
-        height: 12vw;
+    .onsale-item .onsale-percent{
+        width: 10vw;
+        height: 10vw;
         top:1em;
         left:1em;
         font-size: 3vw;
@@ -468,3 +562,40 @@ label[for="category-select"]{
     }
 
 }
+
+
+.onsale-item-con figcaption span:last-child,
+.special-item-con figcaption span:last-child,
+.best-item-con figcaption span:last-child{
+    position: absolute;
+    top: 10px; right: 10px;
+    color: pink;
+    transition: 0.3s;
+    opacity: 0;
+}
+.onsale-item-con:hover figcaption span:first-child,
+.special-item-con:hover figcaption span:first-child,
+.best-item-con:hover figcaption span:first-child,
+.onsale-item-con:hover figcaption span:last-child,
+.special-item-con:hover figcaption span:last-child,
+.best-item-con:hover figcaption span:last-child{
+    transform: scale(1.3);
+}
+.onsale-item-con figcaption span:first-child,
+.special-item-con figcaption span:first-child,
+.best-item-con figcaption span:first-child{
+    position: absolute;
+    top: 10px; right: 40px;
+    color: gold;
+    transition: 0.5s;
+    opacity: 0;
+}
+.onsale-item-con.liked figcaption span:last-child,
+.special-item-con.liked figcaption span:last-child,
+.best-item-con.liked figcaption span:last-child,
+.onsale-item-con.cart figcaption span:first-child,
+.special-item-con.cart figcaption span:first-child,
+.best-item-con.cart figcaption span:first-child{
+    opacity: 1;
+}
+

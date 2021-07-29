@@ -20,14 +20,14 @@ let productPriceSum;
 
 const likeBtn = document.querySelector(".like-bt");
 let likeItems;
-if(localStorage.liked == ''){
+if(localStorage.liked === null || localStorage.liked === '' || localStorage.liked === undefined){
     likeItems = [];
 } else {
     likeItems = localStorage.liked.split(',');
 }
 const cartBtn = document.querySelector(".cart-bt");
 let cartItems;
-if(localStorage.cart == null){
+if(localStorage.cart === null || localStorage.cart === '' || localStorage.cart === undefined){
     cartItems = [];
 } else {
     cartItems = localStorage.cart.split(',');
@@ -70,11 +70,7 @@ function exitProduct(e){
 productModal.addEventListener("click", exitProduct);
 
 
-
-
-
 // product calculate
-
 function removeComma(num){
     let n = parseInt(num.replace(",",""));
     return n;
@@ -94,11 +90,7 @@ numSum.forEach((sign) => {
 
 
 // 좋아요
-
-
-
-
-function iLikeIt(event){
+function iLikeIt(){
     const productId = this.parentElement.parentElement.id;
     const productCon = this.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.childNodes[productId%12];
     
@@ -117,76 +109,41 @@ function iLikeIt(event){
     };
     localStorage.setItem("liked", likeItems);
 } 
-
 likeBtn.addEventListener("click", iLikeIt)
 
 // 장바구니에 담기
-
-
-
 function putCart(){
     const productId = this.parentElement.parentElement.id;
+    const productCon = this.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.childNodes[productId%12];
     if(cartItems.includes(productId)){
         cartItems = cartItems.filter(cartItem => cartItem !== productId);
         localStorage.setItem("cart", cartItems);
         cartBtn.classList.remove("cart");
+        productCon.classList.remove("cart");
     } else {
         cartItems.push(productId);
         localStorage.setItem("cart", cartItems);
         cartBtn.classList.add("cart");
+        productCon.classList.add("cart");
     }
 };
 cartBtn.addEventListener("click", putCart);
 
-// 상품 json
+
 const categoryHeader = document.querySelector(".category-header h2");
 const categoryPages = document.querySelector(".pages")
-let pageNum = 1;
 
-function init(){
-    fetch(categoryUrl)
-    .then(res => res.json())
-    .then(data => callback(data));
-    categoryHeader.innerText = 'DIY미니어처';
-    function callback(data){
-        const categoryCons = document.querySelector(".category-item-cons");
-        categoryCons.innerHTML = '';
-        for(let i=0; i<12; i++){
-            const div = document.createElement("div");
-            if(likeItems.includes((i).toString())){
-                div.className = "category-item-con liked";
-            } else {
-                div.className = "category-item-con";
-            }
-            div.innerHTML =
-            `<figure class="category-item" id="${i}">
-                <img src="img/${data.item[i].image}" alt="image${i}">
-                <span class="material-icons-outlined hiddenHT">
-                            favorite</span>
-            </figure>
-            <div class="item-tag">
-                <div class="item-tag-price">
-                    <p>${data.item[i].name}</p>
-                    <p>${data.item[i].price}원</p>
-                </div>
-                <div class="item-tag-content">
-                    ${data.item[i].detail}
-                </div>
-            </div>`;
-            div.addEventListener("click", event => showProduct(data.item[i].name, data.item[i].detail, data.item[i].price, data.item[i].price, data.item[i].image, data.item[i].secondimage, data.item[i].thirdimage, i));
-            categoryCons.appendChild(div);
-        }
-    }
-}
-window.addEventListener('load', init);
-
-// 상품 바꾸기
+// 상품 json
 const category = document.querySelectorAll(".category-nav li a");
-
+let j = 0;
 function changeCategory(e){
     e.preventDefault();
-    categoryHeader.innerText = this.innerText;
-    let j = parseInt(this.dataset.num) * 12;
+    if(this.nodeName !== "A"){
+        categoryHeader.innerText = 'DIY미니어처';
+    }else {
+        j = parseInt(this.dataset.num) * 12;
+        categoryHeader.innerText = this.innerText;
+    }
     fetch(categoryUrl)
     .then(res => res.json())
     .then(data => callback(data));
@@ -195,16 +152,21 @@ function changeCategory(e){
         categoryCons.innerHTML='';
         for(let i=0; i<12; i++){
             const div = document.createElement("div");
+            div.className = "category-item-con";
             if(likeItems.includes((i+j).toString())){
-                div.className = "category-item-con liked";
-            } else {
-                div.className = "category-item-con";
-            }
+                div.classList.add("liked");
+            };
+            if(cartItems.includes((i+j).toString())){
+                div.classList.add("cart");
+            };
             div.innerHTML =
             `<figure class="category-item" id="${j+i}">
                 <img src="img/${data.item[j+i].image}" alt="image${i}">
                 <span class="material-icons-outlined">
+                            add_shopping_cart</span>
+                <span class="material-icons-outlined">
                             favorite</span>
+
             </figure>
             <div class="item-tag">
                 <div class="item-tag-price">
@@ -223,7 +185,7 @@ function changeCategory(e){
 category.forEach((category) => {
     category.addEventListener("click", changeCategory)
 })
-
+window.addEventListener('load', changeCategory);
 
 
 
