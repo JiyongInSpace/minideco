@@ -32,8 +32,6 @@ a{text-decoration: none;}
     color:#555;
 }
 
-
-
 /* HEADER + dropdown */
 .header-1{
     width:100%;
@@ -97,7 +95,7 @@ label[for="burger"]::before{
     justify-content: center;
     z-index: 1;
 }
-.menu-2 li a, .menu-2 li label{
+.menu-2 li a{
     font-size:14px;
 }
 .menu-1>li{
@@ -139,9 +137,7 @@ label[for="burger"]::before{
     margin: 0.3em;
 }
 
-.header-2 .menu-2 li:hover>a,
-.header-2 .menu-2 li:hover>label,
-.header-2 .menu-2 li #login:checked ~ label{
+.header-2 .menu-2 li:hover>a{
     font-weight: bold;
 }
 .dropdown1>li:hover a, .dropdown2>li:hover a,
@@ -153,105 +149,6 @@ label[for="burger"]::before{
 }
 .header-2 .menu-1>li:hover, .header-2 .menu-1>li:hover>a {
     color: lightslategray;
-    /* font-size:18px; */
-}
-
-
-/* MODAL(login) - 모달기능(나가기 등) */
-.login-bg{
-    position:fixed;
-    top:80px;
-    bottom:0;
-    right:0;
-    left:0;
-    background:rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index:2;
-    display: none;
-}
-.login-bg .login-modal{
-    border: 3px solid #555555;
-    background:white;
-    width:422px; height: 211px;
-    text-align: center;
-    position:relative;
-}
-#login{
-    display: none;
-}
-#login:checked + .login-bg{
-    display: flex;
-}
-
-label[for="exit"]{
-    position: absolute;
-    right: 0.5em;
-}
-label[for="exit"]::before{
-    content:"✕";
-}
-label[for="exit"] span{
-    overflow: hidden;
-    position: absolute;
-    width:1px; height: 1px;
-    opacity: 0;
-}
-#exit{
-    display: none;
-}
-label[for="id"], label[for="pw"]{
-visibility: hidden;
-position: absolute;
-width: 1px;
-height: 1px;
-opacity: 0;
-}
-
-/* MODAL(login) - input */
-.login-con{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-}
-.login-con h2{
-    font-size:1.5em;
-    /* font-weight: bold; */
-}
-.login-form{
-    display: flex;
-    justify-content: center;
-}
-.login-form div{
-    display:flex;
-    flex-direction: column;
-    margin: 1em;
-}
-.login-form div input{
-    border: 0px;
-    margin: 3px 0;
-    /* font-size: */
-}
-input:focus {
-    outline:none;
-}
-.login-form div input[type=submit]{
-    width:53px; height:50px;
-    background-color:#b5b5b5;
-    color:white;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-}
-.login-form div input[type="text"],
-.login-form div input[type="password"]{
-    border-bottom: 1px solid #959595;
-    text-align: right;
-}
-.menu-2 li label[for="login"]{
-    cursor: pointer;
 }
 
 /* 검색 */
@@ -313,9 +210,6 @@ label[for="search"]{
 .fig-bg .fig-bt1 div:active{
     transform: scale(0.8);
 }
-
-
-
 
 /* 상품명, 가격표, 설명 정렬 */
 .item-tag-price{
@@ -427,8 +321,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     background:#dcdcdc;
-    padding: 2rem;
-    /* height:200px; */
+    padding: 3rem;
     text-align: center;
     margin-top:8em;
 }
@@ -459,9 +352,7 @@ footer{
 }
     
 @media( max-width: 991px ){
-    .menu-1 {
 
-    }
     .menu-1>li{
         margin: 0.7em;
         text-align: center;
@@ -472,7 +363,6 @@ footer{
 @media( max-width: 767px ){
     .header-2, .header-3{
         height:350px;
-        /* transition:0.5s; */
     }
     .header-3{
         flex-direction: column;

@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url('common.css');
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid #555555;
+    text-align: center;
+    width:422px;
+    height: 211px;
+    margin: 0 auto;
+}
+
+.login-con h2{
+    font-size:1.5em;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+}
+.login-form div{
+    display:flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.login-form div input{
+    border: 0px;
+    margin: 3px 0;
+    /* font-size: */
+}
+input:focus {
+    outline:none;
+}
+.login-form div input[type=submit]{
+    width:53px; height:50px;
+    background-color:#b5b5b5;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+.login-form div input[type="text"],
+.login-form div input[type="password"]{
+    border-bottom: 1px solid #959595;
+    text-align: right;
+}
+
+label[for="id"], label[for="pw"]{
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    }

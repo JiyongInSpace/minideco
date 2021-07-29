@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minideco</title>
-    <link rel="stylesheet" href="css/community.css">
-    <script src="js/community.js" defer></script>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <header class="header-1">
@@ -43,36 +42,29 @@
             </div>
         </div>
     </header>
-    <table class="board-tb">
-        <caption class="board-cap">REVIEW</caption>
-        <thead>
-            <tr>
-                <th>번호</th> <th>제목</th> <th>작성자</th> <th>작성일</th>
-            </tr>
-        </thead>
-        <tbody id="review-list">
-            <!-- community.json -->
-        </tbody>
-    </table>
 
-    <!-- 검색 및 페이지 -->
-    <div class="undertable">
-        <form class="category-search">
-            <input type="search" id="search">
-            <label for="search">search</label>
-            <input type="image" src="img/search.jpg" alt=""></input>
+    <div class="login-con">
+        <div>
+            <h2>LOGIN</h2>
+            <span>회원로그인</span>
+        </div>
+        <form class="login-form">
+            <div>
+                <label for="id">id</label>
+                <input type="text" id="id" placeholder="아이디">
+                <label for="pw">password</label>
+                <input type="password" id="pw" placeholder="패스워드">
+            </div>
+            <div>
+                <input type="submit" id="sm" value="로그인">
+            </div>
         </form>
-        <div class="pages">
-            <a href="">&lt;</a> 
-            <a href="">1</a> 
-            <a href="">2</a> 
-            <a href="">3</a> 
-            <a href="">4</a> 
-            <a href="">5</a> 
-            <a href="">&gt;</a>
+        <div>
+            <a href="signup.html" target="_blank"><span>회원가입 </span></a>
+            <span>아이디/비밀번호 찾기</span>
         </div>
     </div>
-    
+
     <footer>
         <div class="footer1">
             <div><span>CS CENTER</span> <span>고객센터 </span></div> 010 1234 1234 ㅣ OPEN AM 10:00 - PM 5:00 ㅣ SAT.SUN.HOLIDAY OFF
