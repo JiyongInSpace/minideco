@@ -71,27 +71,87 @@
         }
     ],
     "review":[
-        {"number":"10", "username": "작성자", "date": "2021-07-12", "title": "서랍 어떻게 해도 이쁘네요", "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore fugit animi fugiat expedita placeat voluptatibus voluptates vero velit magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis atque error necessitatibus cum quas, quaerat facere velit fugiat eligendi unde?", "photo": "special1.jpg"},
-        {"number":"9", "username": "작성자", "date": "2021-06-28", "title": "아이들이 좋아해요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"8", "username": "작성자", "date": "2021-05-04", "title": "뚝딱 만들었어요~", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"7", "username": "작성자", "date": "2021-02-05", "title": "잘못배송되어왔어요ㅡ", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"6", "username": "작성자", "date": "2020-09-24", "title": "도착하자마자 바로 완성했어요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"5", "username": "작성자", "date": "2020-08-12", "title": "가방 매장 만들었어요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"4", "username": "작성자", "date": "2020-07-31", "title": "넘 예뻐요~", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"3", "username": "작성자", "date": "2020-03-19", "title": "서랍 어떻게 해도 이쁘네요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"2", "username": "작성자", "date": "2020-03-02", "title": "아이들이 좋아해요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"},
-        {"number":"1", "username": "작성자", "date": "2020-02-19", "title": "뚝딱 만들었어요~", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"}
+        {
+            "number":"10", "username": "작성자", "date": "2021-07-12", "title": "서랍 어떻게 해도 이쁘네요", "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore fugit animi fugiat expedita placeat voluptatibus voluptates vero velit magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis atque error necessitatibus cum quas, quaerat facere velit fugiat eligendi unde?", "photo": "special1.jpg"
+        },
+        {
+            "number":"9", "username": "작성자", "date": "2021-06-28", "title": "아이들이 좋아해요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"
+        },
+        {
+            "number":"8", "username": "작성자", "date": "2021-05-04", "title": "뚝딱 만들었어요~", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special2.jpg"
+        },
+        {
+            "number":"7", "username": "작성자", "date": "2021-02-05", "title": "잘못배송되어왔어요ㅡ", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"
+        },
+        {
+            "number":"6", "username": "작성자", "date": "2020-09-24", "title": "도착하자마자 바로 완성했어요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "best1.jpg"
+        },
+        {
+            "number":"5", "username": "작성자", "date": "2020-08-12", "title": "가방 매장 만들었어요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "best1.jpg"
+        },
+        {
+            "number":"4", "username": "작성자", "date": "2020-07-31", "title": "넘 예뻐요~", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special2.jpg"
+        },
+        {
+            "number":"3", "username": "작성자", "date": "2020-03-19", "title": "서랍 어떻게 해도 이쁘네요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"
+        },
+        {
+            "number":"2", "username": "작성자", "date": "2020-03-02", "title": "아이들이 좋아해요", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special1.jpg"
+        },
+        {
+            "number":"1", "username": "작성자", "date": "2020-02-19", "title": "뚝딱 만들었어요~", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "photo": "special2.jpg"
+        }
     ],
     "qna":[
-        {"number":"10", "state":"처리중", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": ""}, 
-        {"number":"9", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}, 
-        {"number":"8", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "배송 언제 오나요?", "question": "처음부터 아예 만드시나봐요", "answer": "네 만드는데요"}, 
-        {"number":"7", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}, 
-        {"number":"6", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}, 
-        {"number":"5", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}, 
-        {"number":"4", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}, 
-        {"number":"3", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}, 
-        {"number":"2", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}, 
-        {"number":"1", "state":"답변완료", "username": "작성자", "date": "2021-07-12", "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"}
+        {
+            "number":"10", "state":"처리중", "username": "작성자",
+            "date": "2021-07-25", "title": "도리스돌 30cm 에 맞을까요?", 
+            "question": "아이가 도리스돌30cm 을 갖고 있는데.. 모자를 선물하고 싶은데 사이즈가 맞을까요??", "answer": "관리자가 확인 중입니다."
+        }, 
+        {
+            "number":"9", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-23", "title": "🔒비밀글입니다.", 
+            "question": "이 글은 비밀글입니다.", "answer": "이 글은 비밀글입니다."
+        }, 
+        {
+            "number":"8", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-21", "title": "배송 언제 오나요?", 
+            "question": "처음부터 아예 만드시나봐요", "answer": "네 만드는데요"
+        }, 
+        {
+            "number":"7", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-20", "title": "보넷품절 언제 입고되나요?", 
+            "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"
+        }, 
+        {
+            "number":"6", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-12", "title": "🔒비밀글입니다.", 
+            "question": "이 글은 비밀글입니다.", "answer": "이 글은 비밀글입니다."
+        }, 
+        {
+            "number":"5", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-08", "title": "도리스돌30인데 침대 사이즈 맞을까요?",
+            "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"
+        }, 
+        {
+            "number":"4", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-04", "title": "사이즈 잘못왔어요", 
+            "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"
+        }, 
+        {
+            "number":"3", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-02", "title": "🔒비밀글입니다.", 
+            "question": "이 글은 비밀글입니다.", "answer": "이 글은 비밀글입니다."
+        }, 
+        {
+            "number":"2", "state":"답변완료", "username": "작성자", 
+            "date": "2021-07-01", "title": "레터링 서랍 부속", 
+            "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex?", "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex"
+        }, 
+        {
+            "number":"1", "state":"답변완료", "username": "작성자", 
+            "date": "2021-06-25", "title": "🔒비밀글입니다.", 
+            "question": "이 글은 비밀글입니다.", "answer": "이 글은 비밀글입니다."
+        }
     ]
 }
