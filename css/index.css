@@ -235,13 +235,11 @@
     animation:gomgom 1s linear infinite;
 }
 .banner.scroll-effect{
-    transform: translateX(100%)
+    transform: translateY(20%);
+    opacity: 0;
 }
 .banner-gom img{
     transition: 1s;
-}
-.banner-gom.scroll-effect img{
-    width: 1px;
 }
 @keyframes gomgom{
     0%{transform: translateX(0px);}
@@ -294,13 +292,13 @@
 .slide-left{
     position: absolute;
     top:45%;
-    left: -0.5em;
+    left: -0.7em;
     z-index: 1;
 }
 .slide-right{
     position: absolute;
     top:45%;
-    right: -0.5em;
+    right: -0.7em;
     z-index: 1;
 }
 .slide-left span, .slide-right span{
@@ -328,10 +326,6 @@
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
-.best-category.scroll-effect{
-    transform:translateX(-100%);
-}
-
 
 .best-category-list{
     line-height: 2.5;
@@ -431,7 +425,6 @@ label[for="category-select"]{
 .review-item-con .item-tag{
     width:100%;
 }
-
 .review-star{
     background-image: url('../img/star.png');
     height: 1em; width: 5.3em;
