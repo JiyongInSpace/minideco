@@ -126,14 +126,13 @@ function inSpecial(){
          // onsale
         for(let i=1; i<5; i++){
             const div = document.createElement("div");
-            div.className = `special-item-con`;
+            div.className = `onsale-item-con${i} onsale-item-con`;
             if(likeItems.includes((i*17).toString())){
                 div.classList.add("liked");
             };
             if(cartItems.includes((i*17).toString())){
                 div.classList.add("cart");
             };
-            div.className = `onsale-item-con${i} onsale-item-con`;
             div.innerHTML += 
             `<figure class="onsale-item">
                 <img src="img/${data.item[i*17].image}" alt="onsale${i}">
