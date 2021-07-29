@@ -120,5 +120,10 @@
         {"name": "핸드메이드10", "price": "13,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "best1.jpg", "secondimage": "special1.jpg", "thirdimage": "special2.jpg"},
         {"name": "핸드메이드11", "price": "14,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "special1.jpg", "secondimage": "best1.jpg", "thirdimage": "special2.jpg"},
         {"name": "핸드메이드12", "price": "22,000", "detail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "best1.jpg", "secondimage": "special1.jpg", "thirdimage": "special2.jpg"}
+    ],
+    "review":[
+        {"username": "김** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
+        {"username": "최** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"},
+        {"username": "김** 고객님", "reviewTitle": "제품이 이러이러해서 저러저러하네요", "reviewDetail": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", "image": "img/review1.png"}
     ]
 }
