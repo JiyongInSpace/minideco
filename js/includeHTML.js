@@ -1,4 +1,4 @@
-function includeHTML(callback) {
+function includeHTML(){
     var z, i, elmnt, file, xhr;
     /*loop through a collection of all HTML elements:*/
     z = document.getElementsByTagName("*");
@@ -20,7 +20,7 @@ function includeHTML(callback) {
                 }
                 /*remove the attribute, and call this function once more:*/
                 elmnt.removeAttribute("include-html");
-                includeHTML(callback);
+                includeHTML();
             }
             };
             xhr.open("GET", file, true);
@@ -29,9 +29,5 @@ function includeHTML(callback) {
             return;
         }
         }
-        setTimeout(function() {
-        callback();
-        }, 0);
     }
-
 // 코드 출처 : https://www.w3schools.com/howto/howto_html_include.asp
