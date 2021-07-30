@@ -419,5 +419,13 @@ footer{
     .dropdown1>li:hover, .dropdown2>li:hover{
         width:inherit;
     }
-
+}
+body::-webkit-scrollbar{
+    width:5px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: whitesmoke;
+}
+body::-webkit-scrollbar-track{
+    background-color: silver;
 }

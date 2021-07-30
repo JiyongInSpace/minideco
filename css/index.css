@@ -348,7 +348,7 @@
     transition: all 0.5s;
 }
 .best-list.scroll-effect{
-    transform: translateX(100%);
+    transform: translatey(10%);
     opacity: 0;
 }
 .best-item-con{
@@ -404,7 +404,7 @@ label[for="category-select"]{
     transition: 0.5s;
 }
 .review-list.scroll-effect{
-    transform: translatey(20%);
+    transform: translatey(10%);
     opacity: 0;
 }
 .review-item-con{
