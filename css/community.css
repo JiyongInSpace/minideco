@@ -81,8 +81,17 @@ div.active .board-title{
     padding: 1em;
     display: none;
 }
+div.active {
+    width: 100%;
+}
+div.active p{
+    padding: 1em;
+    margin-top: 1em;
+    background-color: lightgray;
+}
 div.active .board-comment{
     display: block;
+    width: 100%;
 }
 .undertable{
     width: 80%;
@@ -127,6 +136,9 @@ td>div>div:nth-child(1){
     .board-tb tr th:nth-child(4){
         width:5%;
         min-width:50px;
+    }
+    div.active p{
+        font-size: inherit;
     }
 }
 @media( max-width: 991px ){

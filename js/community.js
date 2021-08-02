@@ -49,7 +49,7 @@ function init(){
             tr.addEventListener("click", showBoardItem)
             reviewList.appendChild(tr);
         })
-        } else { //notice
+        } else if(boardTitle.innerText === "NOTICE") { //notice
         data.notice.forEach((items, index) => {
             let tr = document.createElement("tr");
             tr.innerHTML = 
@@ -66,7 +66,25 @@ function init(){
             tr.addEventListener("click", showBoardItem)
             noticeList.appendChild(tr);
         })
-    }
+        } else if(boardTitle.innerText === "Q&A") {
+            data.qna.forEach((items, index) => {
+                let tr = document.createElement("tr");
+                tr.innerHTML = 
+                `<td>${items.number}</td>
+                <td class="board-content">
+                    <div>
+                        <div>${items.username} | 작성일: ${items.date}</div>
+                        <div class="board-title">[ ${items.state} ] ${items.title} </div>
+                        <div class="board-comment">${items.question}<p>MINIDECO : ${items.answer}</p></div>
+                    </div>
+                </td>
+                <td>${items.username}</td>
+                <td>${items.date}</td>`;
+                tr.addEventListener("click", showBoardItem)
+                noticeList.appendChild(tr);
+            })
+
+        }
 
     }}
 

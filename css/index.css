@@ -2,9 +2,7 @@
 @import url('common.css');
 
 
-
 /* MAIN */
-
 .main-1{
     width:100%;
     position:relative;
@@ -73,16 +71,13 @@
 .new-small1 img, .new-small2 img {
     width: 50%;
 }
-.new-small1{
+.new-small1, .new-small2{
     background-repeat: no-repeat;
     display:flex;
     justify-content: space-between;
-    margin-bottom:31px;
 }
-.new-small2{
-    background-repeat: no-repeat;
-    display:flex;
-    justify-content: space-between;
+.new-small1{
+    margin-bottom:31px;
 }
 .new-figure{
     position: relative;
@@ -92,7 +87,6 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: right;
-    
 }
 .new-small1 figcaption, .new-small2 figcaption{
     position: absolute;
@@ -109,8 +103,6 @@
 .new-small2 figcaption{
     background-color: #f6b37f;
 }
-
-
 .new-figure figcaption h2{
     font-size: 2em;
     margin-right: 1em;
@@ -122,10 +114,7 @@
 .new-small1, .new-small2{
     transition: 0.5s;
 }
-.new-big.scroll-effect{
-    opacity: 0;
-}
-.new-small1.scroll-effect, .new-small2.scroll-effect{
+.new-big.scroll-effect, .new-small1.scroll-effect, .new-small2.scroll-effect{
     opacity: 0;
 }
 .new-big.scroll-effect figcaption{
@@ -136,11 +125,8 @@
     width: 100%;
 }
 
-
-
 /* 메인페이지 아티클 제목*/
-
-.list-title{
+.list-title, .list-title-best{
     position: absolute;
     left: 0;
     top: -3em;
@@ -156,13 +142,6 @@
     font-size: 1em;
     letter-spacing: -0.1em;
 }
-.list-title-best{
-    position: absolute;
-    left: 0;
-    top: -2.5em;
-    white-space: nowrap;
-}
-
 
 /* ONSALE */
 .onsale-list{
@@ -185,7 +164,6 @@
     transform: translateY(20%);
     opacity: 0;
 }
-
 .onsale-item{
     width:100%;
     margin: 10px;
@@ -205,13 +183,9 @@
     color: white;
     transform:rotate(-20deg);
 }
-.onsale-item img{
+.onsale-item img, .onsale-item-con .item-tag{
     width: 100%;
 }
-.onsale-item-con .item-tag{
-    width: 100%;
-}
-
 /* BANNER */
 
 .banner{
@@ -494,7 +468,9 @@ label[for="category-select"]{
     .slide-left span, .slide-right span{
         font-size: 2em;
     }
-    
+    .list-title-best{
+        top: -3.5em;
+    }
 }     
 
 @media( max-width: 767px ){
